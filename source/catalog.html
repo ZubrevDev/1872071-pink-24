@@ -19,10 +19,10 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
+              <a class="main-nav__link " href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Фотографии</a>
+              <a class="main-nav__link main-nav__link--current" href="catalog.html">Фотографии</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Конкурс</a>
@@ -34,103 +34,89 @@
         </div>
       </nav>
     </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Приложение "Пинк"</h1>
-      <section class="intro-platforms">
-        <div class="intro-platforms__wrapper">
-          <h2 class="intro-platforms__title">Взгляните на жизнь иначе!</h2>
-          <a class="intro-platforms__button intro-platforms__button--download" href="#">Скачать приложение</a>
-          <ul class="intro-platforms__list">
-            <li class="intro-platforms__item">
-              <a class="intro-platforms__link" href="#">Apple</a>
+    <main class="page-maim">
+      <h1 class="visually-hidden">Каталог фотографий</h1>
+      <section class="catalog">
+        <div class="catalog__wrapper">
+          <h2 class="catalog__title"> Фотографии пользователей</h2>
+          <p class="catalog__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <ul class="catalog__list">
+            <li class="catalog__item card">
+              <img class="card__photo" src="./img/panorama-tablet.jpg" width="320" height="137" alt="panorama">
+              <span class="card__legend">ПАНОРАМА ДНЯ</span>
+              <p class="card__user-name">Анна</p>
+              <span class="card__period">(5 минут назад)</span>
+              <p class="card__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <button class="card__button" type="button">Нравится</button>
+              <span class="card__like">Нравится: 215</span>
             </li>
-            <li class="intro-platforms__item">
-              <a class="intro-platforms__link" href="#">Android</a>
+            <li class="catalog__item card">
+              <img class="card__photo" src="./img/photo-1-mobile.jpg" width="280" height="180" alt="photo-1-mobile">
+              <p class="card__user-name">Левон</p>
+              <span class="card__period">(5 часов назад)</span>
+              <p class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <button class="card__button" type="button">Нравится</button>
+              <span class="card__like">Нравится: 356</span>
             </li>
-            <li class="intro-platforms__item">
-              <a class="intro-platforms__link" href="#">Microsoft</a>
+            <li class="catalog__item card">
+              <img class="card__photo" src="./img/photo-2-mobile.jpg" width="280" height="180" alt="photo-2-mobile">
+              <p class="card__user-name">Антон</p>
+              <span class="card__period">(12 часов назад)</span>
+              <p class="card__text">Соседи будут рады!</p>
+              <button class="card__button" type="button">Нравится</button>
+              <span class="card__like">Нравится: 666</span>
+            </li>
+            <li class="catalog__item card">
+              <img class="card__photo" src="./img/photo-3-tablet.jpg" width="280" height="180" alt="photo-3-tablet">
+              <p class="card__user-name">Борис</p>
+              <span class="card__period">(20 часов назад)</span>
+              <p class="card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <button class="card__button" type="button">Нравится</button>
+              <span class="card__like">Нравится: 215</span>
+            </li>
+            <li class="catalog__item card">
+              <img class="card__photo" src="./img/photo-4-tablet.jpg" width="280" height="180" alt="photo-4-tablet">
+              <p class="card__user-name">Сергей</p>
+              <span class="card__period">(25 часов назад)</span>
+              <p class="card__text">Самая кубанская в мире!</p>
+              <button class="card__button" type="button">Нравится</button>
+              <span class="card__like">Нравится: 4</span>
+            </li>
+            <li class="catalog__item card">
+              <img class="card__photo" src="./img/photo-5-tablet.jpg" width="280" height="180" alt="photo-5-tablet">
+              <p class="card__user-name">Максим</p>
+              <span class="card__period">(40 часов назад)</span>
+              <p class="card__text">Где снег-то?</p>
+              <button class="card__button" type="button">Нравится</button>
+              <span class="card__like">Нравится: 150</span>
+            </li>
+            <li class="catalog__item card">
+              <img class="card__photo" src="./img/photo-6-tablet.jpg" width="280" height="180" alt="photo-6-tablet">
+              <p class="card__user-name">Надежда</p>
+              <span class="card__period">(45 часов назад)</span>
+              <p class="card__text">Всем GM и взаимные лайки!</p>
+              <button class="card__button" type="button">Нравится</button>
+              <span class="card__like">Нравится: 2560</span>
             </li>
           </ul>
-          <p class="intro-platforms__legend">
-            <small>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
-          </p>
         </div>
       </section>
-      <section class="advantages">
-        <div class="advantages__wrapper">
-          <h2 class="advantages__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <h3 class="advantages__title advantages__title--item">Поднимает настроение</h3>
-              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title advantages__title--item">Меняет мир вокруг</h3>
-              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title advantages__title--item">Заводит новых друзей</h3>
-              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="reviews">
-        <div class="reviews__wrapper slider">
-          <h2 class="visually-hidden">Отзывы</h2>
-          <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <div class="reviews__author-info">
-                <cite class="reviews__author-name">Николай Петров</cite>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              </div>
-            </blockquote>
+      <section class="upload">
+        <h2 class="visually-hidden">Загрузить свою фотографию</h2>
+        <p class="upload__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="upload__wrapper">
+          <img class="upload__photo" src="./img/photo-7-tablet.jpg" width="280" height="374" alt="photo-7-tablet">
+          <div class="upload__edition edition">
+            <button class="edition__button edition__button--crop" type="button">Обрезка</button>
+            <button class="edition__button edition__button--fill" type="button">Заливка</button>
+            <button class="edition__button edition__button--contrast" type="button">Контраст</button>
+            <div class="edition__change">
+              <label for="control-range"></label>
+              <input type="range" id="control-range">
+            </div>
           </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggles slider__toggles--current" type="button">1</button>
-            <button class="slider__toggles" type="button">2</button>
-            <button class="slider__toggles" type="button">3</button>
-          </p>
-        </div>
-      </section>
-      <section class="rate">
-        <div class="rate__wrapper slider">
-          <h2 class="visually-hidden">Цены</h2>
-          <dl class="rate__list rate__list--standart slider__list">
-            <dt class="rate__name"><span>хит</span>СТАНДАРТ</dt>
-            <dd class="rate__price">3,99 USD</dd>
-            <dt class="rate__option">Розовый фильтр</dt>
-            <dd class="rate__noun">Есть данная опция</dd>
-            <dt class="rate__option">Смайлики</dt>
-            <dd class="rate__noun">Есть данная опция</dd>
-            <dt class="rate__option">Комментарии</dt>
-            <dd class="rate__noun">Нет данной опции</dd>
-          </dl>
-          <p class="rate__toggles slider__toggles">
-            <button class="slider__toggles" type="button">1</button>
-            <button class="slider__toggles slider__toggles--current" type="button">2</button>
-            <button class="slider__toggles" type="button">3</button>
-          </p>
-        </div>
-      </section>
-      <section class="contacts">
-        <div class="contacts__wrapper">
-          <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <b class="contacts__title contacts__title--item">Звоните:</b>
-              <a class="contacts__text contacts__text--phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-            </li>
-            <li class="contacts__item">
-              <b class="contacts__title contacts__title--item">Пишите:</b>
-              <a class="contacts__text contacts__text--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </li>
-            <li class="contacts__item">
-              <b class="contacts__title contacts__title--item">Приезжайте в гости:</b>
-              <a class="contacts__text contacts__text--adress">ул. Большая Конюшенная, 19/8</a>
-              <img src="./img/map.jpg" width="320" height="200" alt="ул. Большая Конюшенная, 19/8.">
-            </li>
-          </ul>
+          <button type="submit">Запостить</button>
+          <button type="reset">Отмена</button>
         </div>
       </section>
     </main>
@@ -182,7 +168,7 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
+          <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="./img/htmlacademy.svg" aria-label="HTML Академия.">
             <svg width="27" height="34" viewBox="0 0 27 34" role="img" aria-label="HTML Академия." xmlns="http://www.w3.org/2000/svg">
               <path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z" fill="#D22856"/>
