@@ -19,13 +19,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Конкурс</a>
+              <a class="main-nav__link main-nav__link--current" href="form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">HTML Academy</a>
@@ -35,102 +35,110 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Приложение "Пинк"</h1>
-      <section class="intro-platforms">
-        <div class="intro-platforms__wrapper">
-          <h2 class="intro-platforms__title">Взгляните на жизнь иначе!</h2>
-          <a class="intro-platforms__button intro-platforms__button--download" href="#">Скачать приложение</a>
-          <ul class="intro-platforms__list">
-            <li class="intro-platforms__item">
-              <a class="intro-platforms__link" href="#">Apple</a>
-            </li>
-            <li class="intro-platforms__item">
-              <a class="intro-platforms__link" href="#">Android</a>
-            </li>
-            <li class="intro-platforms__item">
-              <a class="intro-platforms__link" href="#">Microsoft</a>
-            </li>
-          </ul>
-          <p class="intro-platforms__legend">
-            <small>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
-          </p>
-        </div>
-      </section>
-      <section class="advantages">
-        <div class="advantages__wrapper">
-          <h2 class="advantages__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <h3 class="advantages__title advantages__title--item">Поднимает настроение</h3>
-              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title advantages__title--item">Меняет мир вокруг</h3>
-              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title advantages__title--item">Заводит новых друзей</h3>
-              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="reviews">
-        <div class="reviews__wrapper slider">
-          <h2 class="visually-hidden">Отзывы</h2>
-          <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <div class="reviews__author-info">
-                <cite class="reviews__author-name">Николай Петров</cite>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      <h1 class="visually-hidden">Форма для участия в конкурсе</h1>
+      <section class="contest">
+        <div class="contest__wrapper">
+          <h2 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+          <p class="contest__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <form class="contest__form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="contest__group user-data">
+              <legend class="visually-hidden">Данные пользователя</legend>
+              <div class="user-data">
+                <label for="surname">ФАМИЛИЯ:</label>
+                <input type="text" id="surname" placeholder="Укажите фамилию *" required>
               </div>
-            </blockquote>
-          </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggles slider__toggles--current" type="button">1</button>
-            <button class="slider__toggles" type="button">2</button>
-            <button class="slider__toggles" type="button">3</button>
-          </p>
-        </div>
-      </section>
-      <section class="rate">
-        <div class="rate__wrapper slider">
-          <h2 class="visually-hidden">Цены</h2>
-          <dl class="rate__list rate__list--standart slider__list">
-            <dt class="rate__name"><span>хит</span>СТАНДАРТ</dt>
-            <dd class="rate__price">3,99 USD</dd>
-            <dt class="rate__option">Розовый фильтр</dt>
-            <dd class="rate__noun">Есть данная опция</dd>
-            <dt class="rate__option">Смайлики</dt>
-            <dd class="rate__noun">Есть данная опция</dd>
-            <dt class="rate__option">Комментарии</dt>
-            <dd class="rate__noun">Нет данной опции</dd>
-          </dl>
-          <p class="rate__toggles slider__toggles">
-            <button class="slider__toggles" type="button">1</button>
-            <button class="slider__toggles slider__toggles--current" type="button">2</button>
-            <button class="slider__toggles" type="button">3</button>
-          </p>
-        </div>
-      </section>
-      <section class="contacts">
-        <div class="contacts__wrapper">
-          <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <b class="contacts__title contacts__title--item">Звоните:</b>
-              <a class="contacts__text contacts__text--phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-            </li>
-            <li class="contacts__item">
-              <b class="contacts__title contacts__title--item">Пишите:</b>
-              <a class="contacts__text contacts__text--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </li>
-            <li class="contacts__item">
-              <b class="contacts__title contacts__title--item">Приезжайте в гости:</b>
-              <a class="contacts__text contacts__text--adress">ул. Большая Конюшенная, 19/8</a>
-              <img src="./img/map.jpg" width="320" height="200" alt="ул. Большая Конюшенная, 19/8.">
-            </li>
-          </ul>
+              <div class="user-data">
+                <label for="name">ИМЯ:</label>
+                <input type="text" id="name" placeholder="Введите ваше имя *" required>
+              </div>
+              <div class="user-data">
+                <label for="patronymic">ОТЧЕСТВО:</label>
+                <input  type="text" id="patronymic" placeholder="Ну и отчество тоже">
+              </div>
+            </fieldset>
+            <fieldset class="contest__group progress">
+              <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="progress__list">
+                <li class="progress__item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="selfie" id="selfie" checked>
+                    <span class="control-label">Сделал селфи с акулой</span>
+                  </label>
+                </li>
+                <li class="progress__item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="beach" id="beach" checked>
+                    <span class="control-label">Обгорел на пляже</span>
+                  </label>
+                </li>
+                <li class="progress__item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="Norris" id="Norris">
+                    <span class="control-label">Видел Чака Норриса</span>
+                  </label>
+                </li>
+                <li class="progress__item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="souvenirs" id="souvenirs">
+                    <span class="control-label">Накупил сувениров</span>
+                  </label>
+                </li>
+                <li class="progress__item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="tower" id="tower" checked>
+                    <span class="control-label">Удержал башню</span>
+                  </label>
+                </li>
+                <li class="progress__item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="hotel" id="hotel">
+                    <span class="control-label">Разгромил отель</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="contest__group user-contacts">
+              <legend class="visually-hidden">Контактная информация</legend>
+              <div class="user-contacts__phone">
+                <label for="phone">НОМЕР ТЕЛЕФОНА</label>
+                <input type="number" id="phone" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="user-contacts__email">
+                <label for="email">АДРЕС ПОЧТЫ</label>
+                <input type="email" id="email" placeholder="Введите почту *" required>
+              </div>
+            </fieldset>
+            <fieldset class="contest__group platforms">
+              <legend class="platforms__title">С каким приложением путешествовали?</legend>
+              <ul class="platforms__list">
+                <li class="platforms__item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="platforms" value="iOS" id="iOS" checked>
+                    <span class="control-label">Pink для iOS</span>
+                  </label>
+                </li>
+                <li class="platforms__item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="platforms" value="Android" id="Android">
+                    <span class="control-label">Pink на Android</span>
+                  </label>
+                </li>
+                <li class="platforms__item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="platforms" value="Windows" id="Windows">
+                    <span class="control-label">Windows Phone</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="contest__group emotions">
+              <legend class="emotions__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+              <label for="emotions" class="visually-hidden">Текст</label>
+              <input type="text" name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях">
+            </fieldset>
+            <button class="contest__form contest__form--button-submit" type="submit" aria-label="Отправить форму">Отправить форму</button>
+            <small class="contest__form contest__form--legend">* — обязательные поля</small>
+          </form>
         </div>
       </section>
     </main>
@@ -182,7 +190,7 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
+          <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="./img/htmlacademy.svg" aria-label="HTML Академия.">
             <svg width="27" height="34" viewBox="0 0 27 34" role="img" aria-label="HTML Академия." xmlns="http://www.w3.org/2000/svg">
               <path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z" fill="#D22856"/>
@@ -191,5 +199,21 @@
         </div>
       </div>
     </footer>
+    <!-- modal-failure -->
+    <div class="modal-failure">
+      <section class="modal-failure__content">
+        <h3 class="modal-failure__content modal-failure__content--title">Что-то пошло не так!</h3>
+        <p class="modal-failure__content modal-failure__content--text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-failure__content modal-failure__content--button" type="button">ОК</button>
+      </section>
+    </div>
+    <!-- modal-success -->
+    <div class="modal-success">
+      <section class="modal-success__content">
+        <h3 class="modal-success__content modal-success__content--title">Ваша заявка отправлена</h3>
+        <p class="modal-success__content modal-success__content--text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        <button class="modal-success__content modal-success__content--button" type="button">ЗАКРЫТЬ ОКНО</button>
+      </section>
+    </div>
   </body>
 </html>
