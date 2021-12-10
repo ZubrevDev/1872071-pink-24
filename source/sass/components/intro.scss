@@ -1,0 +1,41 @@
+.intro {
+  background-color: $blue-dark;
+  color: $white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.intro__sudtitle {
+  font-weight: $weight-light;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.intro__wrapper {
+  min-height: 271px;
+}
+
+.intro__button {
+  @include btn-rounded;
+  color: $white;
+  border: 3px solid $white;
+  border-radius: 29px;
+  padding: 21px 39px;
+  margin-bottom: 32px;
+}
+
+.intro__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__link {
+  margin-right: 35px;
+}
+
+.intro__legend {
+  font-weight: $weight-light;
+  font-size: 14px;
+  line-height: 24px;
+}
