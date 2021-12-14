@@ -7,15 +7,19 @@ img {
 }
 
 a {
-  text-decoration: none;
+  @include reset;
 }
 
-ul {
-  list-style: none;
+.page-body ul {
+  @include reset;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+@mixin reset {
+  list-style: none;
 }
