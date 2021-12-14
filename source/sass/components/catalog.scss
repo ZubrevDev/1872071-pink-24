@@ -1,0 +1,22 @@
+.catalog {
+  background-color: $bg-page;
+  color: $dark;
+}
+
+.catalog__title {
+  font-weight: $weight-light;
+  font-size: 24px;
+  line-height: 33px;
+  color: $white;
+  background-color: $black;
+
+  @include align-center;
+}
+
+.catalog__text {
+  font-weight: $weight-normal;
+  font-size: 14px;
+  line-height: 30px;
+
+  @include align-center;
+}

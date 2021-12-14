@@ -1,0 +1,9 @@
+.contest__text {
+  background-color: $white;
+  color: $dark;
+  font-weight: $weight-normal;
+  font-size: 14px;
+  line-height: 30px;
+
+  @include align-center;
+}

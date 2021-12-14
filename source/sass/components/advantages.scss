@@ -1,0 +1,32 @@
+.advantages {
+  background-color: $white;
+
+  @include align-center;
+}
+
+.advantages__subtitle {
+  font-weight: $weight-light;
+  font-size: 24px;
+  line-height: 29px;
+  min-width: 280px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  background-color: $light;
+}
+
+.advantages__title--item {
+  font-weight: $weight-bold;
+  font-size: 18px;
+  line-height: 133%;
+  color: $black;
+}
+
+.advantages__description {
+  font-weight: $weight-normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark;
+}

@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  @include reset;
+}
+
+.page-body ul {
+  @include reset;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@mixin reset {
+  list-style: none;
+}

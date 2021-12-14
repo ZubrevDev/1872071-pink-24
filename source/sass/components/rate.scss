@@ -1,0 +1,66 @@
+.rate {
+  background-color: $light;
+}
+
+.rate__wrapper {
+  display: block;
+
+  @include align-center;
+}
+
+.rate__table {
+  margin: 0 auto;
+  min-width: 100%;
+}
+
+.rate__head {
+  text-align: center;
+  background: $dark;
+  border: 2px solid #283645;
+  border-radius: 1px 0 0 0;
+  color: $white;
+}
+
+.rate__base,
+.rate__unlim {
+  min-width: 7%;
+}
+
+.rate__standart {
+  min-width: 86%;
+}
+
+.rate__name {
+  font-weight: $weight-bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @include align-center;
+}
+
+.rate__price {
+  font-weight: $weight-light;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @include align-center;
+}
+
+.rate__body {
+  border: 2px solid #e5e5e5;
+  background-color: $white;
+}
+
+.rate__option {
+  font-weight: $weight-normal;
+  font-size: 14px;
+  line-height: 30px;
+  align-items: center;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}

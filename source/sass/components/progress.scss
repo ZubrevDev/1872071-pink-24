@@ -1,0 +1,8 @@
+.progress {
+  background: $light;
+}
+
+.progress__title {
+  @include form-title;
+  @include align-center;
+}

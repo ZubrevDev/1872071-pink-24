@@ -2,58 +2,61 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинкпше</title>
+    <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class=page__body>
-    <header class=page-header>
-      <a class="page-header__logo">
-        <img class="img page-header__logo-word" src="./img/logo-word-white.svg" width="74" height="23" alt="Пинк.">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <svg width="50" height="24" viewBox="0 0 50 24" role="img" aria-label="Открыть меню." xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.14 0C.99 0 .84.02.7.07S.43.2.33.3A.88.88 0 0 0 0 1v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 3V1a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 11v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 13v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 21v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 23v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Z" fill="#fff"/>
-          </svg>
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current" href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <body class="page-body">
+    <header class="header">
+      <div class="header__inner-page">
+        <nav class="nav">
+          <div class="nav__wrapper">
+            <a class="nav__logo">
+              <img class="img nav__logo-word" src="./img/logo-word-white.svg" width="74" height="23" alt="Пинк.">
+            </a>
+            <button class="nav__toggle" type="button">
+              <svg width="50" height="24" viewBox="0 0 50 24" role="img" aria-label="Открыть меню." xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.14 0C.99 0 .84.02.7.07S.43.2.33.3A.88.88 0 0 0 0 1v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 3V1a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 11v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 13v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 21v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 23v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Z" fill="#fff"/>
+              </svg>
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="catalog.html">Фотографии</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link--current" href="form.html">Конкурс</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <h1 class="header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
     </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Форма для участия в конкурсе</h1>
+    <main class="main">
       <section class="contest">
         <div class="contest__wrapper">
-          <h2 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+          <h2  class="visually-hidden">Заполнение формы</h2>
           <p class="contest__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-          <form class="contest__form" action="https://echo.htmlacademy.ru" method="get">
+          <form class="contest__form form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="contest__group user-data">
               <legend class="visually-hidden">Данные пользователя</legend>
-              <div class="user-data">
-                <label for="surname">ФАМИЛИЯ:</label>
-                <input type="text" id="surname" placeholder="Укажите фамилию *" required>
+              <div class="form__inner form__inner--user-data">
+                <label class="form__label" for="surname">Фамилия:</label>
+                <input class="form__input" type="text" id="surname" placeholder="Укажите фамилию *" required>
               </div>
-              <div class="user-data">
-                <label for="name">ИМЯ:</label>
-                <input type="text" id="name" placeholder="Введите ваше имя *" required>
+              <div class="form__inner form__inner--user-data">
+                <label class="form__label" for="name">Имя:</label>
+                <input class="form__input" type="text" id="name" placeholder="Введите ваше имя *" required>
               </div>
-              <div class="user-data">
-                <label for="patronymic">ОТЧЕСТВО:</label>
-                <input  type="text" id="patronymic" placeholder="Ну и отчество тоже">
+              <div class="form__inner form__inner--user-data">
+                <label class="form__label" for="patronymic">Отчество:</label>
+                <input class="form__input" type="text" id="patronymic" placeholder="Ну и отчество тоже">
               </div>
             </fieldset>
             <fieldset class="contest__group progress">
@@ -99,13 +102,13 @@
             </fieldset>
             <fieldset class="contest__group user-contacts">
               <legend class="visually-hidden">Контактная информация</legend>
-              <div class="user-contacts__phone">
-                <label for="phone">НОМЕР ТЕЛЕФОНА</label>
-                <input type="number" id="phone" placeholder="Номер, пожалуйста">
+              <div class="form__inner user-contacts__phone">
+                <label class="form__label" for="phone">НОМЕР ТЕЛЕФОНА</label>
+                <input class="form__input" type="number" id="phone" placeholder="Номер, пожалуйста">
               </div>
-              <div class="user-contacts__email">
-                <label for="email">АДРЕС ПОЧТЫ</label>
-                <input type="email" id="email" placeholder="Введите почту *" required>
+              <div class="form__inner user-contacts__email">
+                <label class="form__label" for="email">АДРЕС ПОЧТЫ</label>
+                <input class="form__input" type="email" id="email" placeholder="Введите почту *" required>
               </div>
             </fieldset>
             <fieldset class="contest__group platforms">
@@ -132,19 +135,19 @@
               </ul>
             </fieldset>
             <fieldset class="contest__group emotions">
-              <legend class="emotions__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+              <legend class="emotions__title">Опишите свои эмоции</legend>
               <label for="emotions" class="visually-hidden">Текст</label>
-              <input type="text" name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях">
+              <input class="form__input" type="text" name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях">
             </fieldset>
-            <button class="contest__form contest__form--button-submit" type="submit" aria-label="Отправить форму">Отправить форму</button>
-            <small class="contest__form contest__form--legend">* — обязательные поля</small>
+            <button class="form__button" type="submit" aria-label="Отправить форму">Отправить форму</button>
+            <small class="form__legend">* — обязательные поля</small>
           </form>
         </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__logo logo-pink">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo logo-pink">
           <a class="logo-pink__link logo-pink__link--icon" href="#">
             <svg width="59" height="40" viewBox="0 0 59 40" role="img" aria-label="Логотип очки." xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M53.8917 6.58616L58.9302 27.7312C59.0013 27.9491 59.0184 28.1815 58.98 28.4078C58.9417 28.6341 58.849 28.8472 58.7102 29.0284C58.5715 29.2096 58.3909 29.3532 58.1845 29.4465C57.978 29.5398 57.7522 29.58 57.5268 29.5635H53.5201C52.8298 35.3747 47.9494 39.8784 42.0315 39.8784C36.1136 39.8784 31.2332 35.3747 30.543 29.5635H28.5778C27.8869 35.442 22.9527 40 16.9685 40C10.9742 40 6.0335 35.4266 5.35571 29.5337H1.45014C1.22961 29.5445 1.00974 29.5014 0.808914 29.4082C0.608085 29.315 0.432119 29.1743 0.295711 28.9979C0.159304 28.8214 0.0664152 28.6144 0.0248022 28.3941C-0.0168108 28.1737 -0.00593994 27.9464 0.0565069 27.7312L5.10477 6.58616C5.45562 4.25872 7.63865 0 13.4861 0C13.8738 0 14.2456 0.156518 14.5197 0.435122C14.7939 0.713727 14.9479 1.0916 14.9479 1.4856C14.9479 1.87961 14.7939 2.25748 14.5197 2.53608C14.2456 2.81468 13.8738 2.9712 13.4861 2.9712C8.7789 2.9712 8.04797 6.6654 7.9895 7.07146L3.3408 26.6022H5.37467C6.12089 20.7847 11.0272 16.2918 16.9685 16.2918C22.9066 16.2918 27.8107 20.7798 28.5611 26.5926L30.5587 26.6017C31.3043 20.8518 36.1567 16.4134 42.0315 16.4134C47.9178 16.4134 52.7776 20.8691 53.5086 26.6353V26.5824H55.6459L51.007 7.07146C50.9387 6.6654 50.237 2.9712 45.5104 2.9712C45.1227 2.9712 44.7509 2.81468 44.4767 2.53608C44.2026 2.25748 44.0485 1.87961 44.0485 1.4856C44.0485 1.0916 44.2026 0.713727 44.4767 0.435122C44.7509 0.156518 45.1227 0 45.5104 0C51.3578 0 53.5408 4.25872 53.8917 6.58616ZM25.6722 29.5635C25.7448 29.1018 25.7825 28.6283 25.7825 28.1459C25.7825 27.6164 25.7371 27.0977 25.65 26.5935C24.9252 22.3982 21.3141 19.2097 16.9685 19.2097C12.6203 19.2097 9.00753 22.402 8.28571 26.601C8.19945 27.1028 8.15447 27.619 8.15447 28.1459C8.15447 28.6205 8.19096 29.0864 8.26125 29.541C8.92191 33.8136 12.5687 37.0821 16.9685 37.0821C21.3605 37.0821 25.0023 33.8251 25.6722 29.5635ZM50.6138 29.5635C50.6874 29.102 50.7256 28.6285 50.7256 28.1459C50.7256 23.2777 46.8331 19.3313 42.0315 19.3313C37.2299 19.3313 33.3374 23.2777 33.3374 28.1459C33.3374 28.6285 33.3756 29.102 33.4492 29.5635C34.118 33.7577 37.7058 36.9605 42.0315 36.9605C46.3572 36.9605 49.945 33.7577 50.6138 29.5635Z" fill="#D22856"/>
@@ -160,7 +163,7 @@
             <span class="visually-hidden">Приложение "Пинк"</span>
           </a>
         </div>
-        <div class="page-footer__social social">
+        <div class="footer__social social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social__list">
             <li class="social__item">
@@ -189,9 +192,9 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
+        <div class="footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="./img/htmlacademy.svg" aria-label="HTML Академия.">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Академия.">
             <svg width="27" height="34" viewBox="0 0 27 34" role="img" aria-label="HTML Академия." xmlns="http://www.w3.org/2000/svg">
               <path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z" fill="#D22856"/>
             </svg>
@@ -200,20 +203,16 @@
       </div>
     </footer>
     <!-- modal-failure -->
-    <div class="modal-failure">
-      <section class="modal-failure__content">
-        <h3 class="modal-failure__content modal-failure__content--title">Что-то пошло не так!</h3>
-        <p class="modal-failure__content modal-failure__content--text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal-failure__content modal-failure__content--button" type="button">ОК</button>
+      <section class="modal modal-failure">
+        <h3 class="modal__title">Что-то пошло не так!</h3>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button" type="button">ОК</button>
       </section>
-    </div>
     <!-- modal-success -->
-    <div class="modal-success">
-      <section class="modal-success__content">
-        <h3 class="modal-success__content modal-success__content--title">Ваша заявка отправлена</h3>
-        <p class="modal-success__content modal-success__content--text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-        <button class="modal-success__content modal-success__content--button" type="button">ЗАКРЫТЬ ОКНО</button>
+      <section class="modal modal-success">
+        <h3 class="modal__title">Ваша заявка отправлена</h3>
+        <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        <button class="modal__button" type="button">ЗАКРЫТЬ ОКНО</button>
       </section>
-    </div>
   </body>
 </html>
