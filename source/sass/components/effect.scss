@@ -1,0 +1,54 @@
+.effect__wrapper {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-max-width;
+
+    display: grid;
+    grid-template-columns: 276px 1fr;
+    min-height: 330px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-max-width;
+
+    grid-template-columns: 345px 1fr;
+    min-height: 429px;
+  }
+}
+
+.effect__subtitle {
+  font-weight: $weight-bold;
+  font-size: 30px;
+  line-height: 120%;
+  align-items: center;
+  color: $black;
+
+  @media (min-width: $desktop-width) {
+    line-height: 100%;
+  }
+}
+
+.effect__text {
+  font-weight: $weight-normal;
+  font-size: 14px;
+  line-height: 171%;
+  align-items: center;
+  color: $dark;
+}
+
+.effect__info {
+  font-weight: $weight-normal;
+  font-size: 14px;
+  line-height: 167%;
+  text-decoration: underline;
+  color: $pink;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 167%;
+  }
+}

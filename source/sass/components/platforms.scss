@@ -4,5 +4,5 @@
 
 .platforms__title {
   @include form-title;
-  @include align-center;
+  text-align: center;
 }

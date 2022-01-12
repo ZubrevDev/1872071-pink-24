@@ -3,20 +3,47 @@
   color: $dark;
 }
 
-.catalog__title {
-  font-weight: $weight-light;
-  font-size: 24px;
-  line-height: 33px;
-  color: $white;
-  background-color: $black;
+.catalog__wrapper {
+  min-width: 280px;
+  padding: 54px 20px;
+  margin: 0 auto;
 
-  @include align-center;
+  @media (min-width: $tablet-width) {
+    min-width: 620px;
+    padding-top: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-max-width;
+  }
 }
 
 .catalog__text {
   font-weight: $weight-normal;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
+  margin-bottom: 60px;
 
-  @include align-center;
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 167%;
+    margin-bottom: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 97px;
+  }
+}
+
+.catalog__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
