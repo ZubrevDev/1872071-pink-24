@@ -3,10 +3,6 @@
   color: $white;
 }
 
-.header__main {
-  min-height: 733px;
-}
-
 .header__title {
   font-weight: $weight-light;
   font-size: 24px;
@@ -17,18 +13,4 @@
 
 .header__inner-page {
   min-height: 237px;
-}
-
-//tablet
-@media (min-width: $tablet-width) {
-  .header__main {
-    min-height: 729px;
-  }
-}
-
-//desktop
-@media (min-width: $desktop-width) {
-  .header__main {
-    min-height: 853px;
-  }
 }

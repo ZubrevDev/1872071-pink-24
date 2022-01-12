@@ -2,7 +2,7 @@
   background-color: $blue-dark;
   color: $white;
   text-align: center;
-  padding-top: 20px;
+  padding: 28px 20px 38px 20px;
 }
 
 .intro__sudtitle {
@@ -19,9 +19,31 @@
   @include btn-rounded;
   color: $white;
   border: 3px solid $white;
-  border-radius: 29px;
+  border-radius: 30px;
   padding: 21px 39px;
   margin-bottom: 32px;
+
+  &:hover {
+    color: $pink;
+    box-shadow: 0 5px 7px rgba(1, 1, 1, 0.75);
+    background-color: $white;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro__button {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__button {
+    max-width: 300px;
+  }
 }
 
 .intro__list {
@@ -32,6 +54,13 @@
 
 .intro__link {
   margin-right: 35px;
+}
+
+.intro__link--apple {
+  display: block;
+  width: 47px;
+  background-image: $apple-logo;
+  background-repeat: no-repeat;
 }
 
 .intro__legend {

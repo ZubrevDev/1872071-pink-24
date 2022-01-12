@@ -23,6 +23,7 @@ $bg-header2-tablet: url("../img/bg-img/phone-hand-tablet.jpg");
 $bg-header2-desktop: url("../img/bg-img/phone-hand-desktop.jpg");
 $bg-header3-tablet: url("../img/bg-img/screen-tablet.jpg");
 $bg-header3-desktop: url("../img/bg-img/screen-desktop.jpg");
+$apple-logo: url("../img/apple-logo.svg");
 
 //шрифты
 $base-font: "Open Sans", sans-serif;
@@ -57,7 +58,7 @@ $mobile-width-only: 659px;
 //button-catalog
 @mixin btn-rounded {
   display: block;
-  min-width: 280px;
+  max-width: 280px;
   margin: 0 auto;
   font-family: inherit;
   font-weight: $weight-bold;

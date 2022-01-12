@@ -1,19 +1,65 @@
 .nav {
   min-height: 66px;
   background-color: $black;
-  opacity: 0.3;
 
   @include align-center;
+}
+
+.nav ul {
+  display: none; /* выключено!*/
+}
+
+@media (min-width: $tablet-width) {
+  .nav {
+    min-height: 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    min-height: 110px;
+  }
 }
 
 .nav__wrapper {
   background-image: $bg-header1-mobile;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .nav__wrapper--main {
+    min-height: 729px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav__wrapper--main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1200px;
+    min-height: 853px;
+  }
 }
 
 .nav__logo-word {
   min-height: 23px;
+
+  &:hover svg {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: 0.3;
+  }
 }
 
 .nav__toggle {
@@ -23,13 +69,33 @@
   opacity: 1;
 }
 
+@media (min-width: $desktop-width) {
+  .nav__toggle {
+    display: none;
+  }
+}
+
 .nav__list {
   margin: 0;
   padding: 0;
 }
 
+@media (min-width: $desktop-width) {
+  .nav__list {
+    display: flex;
+    border: none;
+  }
+}
+
 .nav__item {
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+@media (min-width: $desktop-width) {
+  .nav__item {
+    display: inline-block;
+    margin-right: 78px;
+  }
 }
 
 .nav__link {
@@ -39,47 +105,4 @@
   align-items: center;
   text-transform: uppercase;
   color: $white;
-}
-
-//Tablet
-@media (min-width: $tablet-width) {
-  .nav {
-    min-height: 110px;
-  }
-
-  .nav__wrapper--main {
-    min-height: 729px;
-  }
-}
-
-//Desktop
-@media (min-width: $desktop-width) {
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: transparent;
-    min-height: 110px;
-  }
-
-  .nav__wrapper--main {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 1200px;
-    min-height: 853px;
-  }
-
-  .nav__toggle {
-    display: none;
-  }
-
-  .nav__list {
-    display: flex;
-    border: none;
-  }
-
-  .nav__item {
-    display: inline-block;
-    margin-right: 78px;
-  }
 }

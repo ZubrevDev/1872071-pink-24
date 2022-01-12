@@ -2,9 +2,24 @@
   border: none;
 }
 
+//desktop
+@media (min-width: $desktop-width) {
+  .form fieldset:not(:first-child) {
+    border: 2px solid $grey;
+  }
+}
+
 .form__inner {
   display: flex;
   flex-direction: column;
+}
+
+//desktop
+@media (min-width: $desktop-width) {
+  .form__inner--user-data {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .form__label {
@@ -46,16 +61,4 @@
   display: inline-block;
   margin: 0 auto;
   text-transform: uppercase;
-}
-
-//desktop
-@media (min-width: $desktop-width) {
-  .form fieldset:not(:first-child) {
-    border: 2px solid $grey;
-  }
-
-  .form__inner--user-data {
-    display: flex;
-    flex-direction: row;
-  }
 }
