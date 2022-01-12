@@ -1,8 +1,33 @@
+.card {
+  position: relative;
+  width: 280px;
+  padding: 25px 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
+
 .card__legend {
+  display: inline-block;
+  min-width: 140px;
+  min-height: 36px;
   background-color: $pink;
   color: $white;
+  font-weight: $weight-bold;
+  font-size: 12px;
+  line-height: 200%;
+  text-align: center;
+  padding: 13px 20px;
+  position: absolute;
+  top: 25px;
+  right: 0;
+}
 
-  @include align-center;
+.card__photo {
+  &--panorama {
+    min-width: 100%;
+  }
 }
 
 .card__user-name {
@@ -28,6 +53,17 @@
   font-size: 14px;
   line-height: 24px;
   color: $dark;
+}
+
+.card__button {
+  background-image: $heard;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  width: 15px;
+  height: 14px;
+  cursor: pointer;
+  margin-right: 18px;
 }
 
 .card__like {

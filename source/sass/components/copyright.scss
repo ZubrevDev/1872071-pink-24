@@ -1,6 +1,7 @@
 .copyright {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .copyright__text {
@@ -9,4 +10,25 @@
   line-height: 18px;
   align-items: center;
   color: $dark;
+  margin-right: 15px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.copyright__link {
+  svg {
+    margin: 0;
+  }
+
+  fill: $pink;
+
+  &:hover svg {
+    fill: $dark;
+  }
+
+  &:active svg {
+    fill-opacity: 0.3;
+  }
 }

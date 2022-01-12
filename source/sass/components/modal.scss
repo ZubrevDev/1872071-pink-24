@@ -2,6 +2,8 @@
   background-color: $white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 1px;
+  padding-top: 44px;
+  padding-bottom: 52px;
 }
 
 .modal__title {
@@ -9,8 +11,7 @@
   font-size: 18px;
   line-height: 24px;
   color: $black;
-
-  @include align-center;
+  text-align: center;
 }
 
 .modal__text {
@@ -18,12 +19,10 @@
   font-size: 14px;
   line-height: 24px;
   color: $dark;
-
-  @include align-center;
+  text-align: center;
 }
 
 .modal__button {
-  margin: 0 auto;
-
   @include btn-form;
+  margin: 0 auto;
 }

@@ -3,14 +3,42 @@
 }
 
 .rate__wrapper {
-  display: block;
+  @include mobile-max-width;
 
-  @include align-center;
+  min-height: 506px;
+  margin: 0 auto;
+  padding-top: 129px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-max-width;
+
+    min-height: 400px;
+    padding-top: 114px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-max-width;
+
+    min-height: 534px;
+    padding-top: 159px;
+    padding-bottom: 98px;
+  }
 }
 
 .rate__table {
   margin: 0 auto;
-  min-width: 100%;
+  min-width: 320px;
+  margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 895px;
+  }
 }
 
 .rate__head {
@@ -21,9 +49,12 @@
   color: $white;
 }
 
-.rate__base,
+.rate__base {
+  width: 7%;
+}
+
 .rate__unlim {
-  min-width: 7%;
+  width: 7%;
 }
 
 .rate__standart {
@@ -35,8 +66,6 @@
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
-
-  @include align-center;
 }
 
 .rate__price {
@@ -44,8 +73,6 @@
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-
-  @include align-center;
 }
 
 .rate__body {
@@ -63,4 +90,25 @@
   justify-content: space-between;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.rate__noun {
+  width: 31px;
+  height: 31px;
+
+  &--done {
+    background-image: $noun-done;
+    background-repeat: no-repeat;
+  }
+
+  &--none {
+    background-image: $noun-none;
+    background-repeat: no-repeat;
+  }
+}
+
+.rate__toggles {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

@@ -18,12 +18,19 @@ $bg-main-nav-list: #283645;
 $bg-header1-mobile: url("../img/bg-img/back-mobile.jpg");
 $bg-header1-tablet: url("../img/bg-img/back-tablet.jpg");
 $bg-header1-desktop: url("../img/bg-img/back-desktop.jpg");
-$bg-header2-mobile: url("../img/bg-img/phone-hand-mobile.jpg");
-$bg-header2-tablet: url("../img/bg-img/phone-hand-tablet.jpg");
-$bg-header2-desktop: url("../img/bg-img/phone-hand-desktop.jpg");
+$bg-hand-mobile: url("../img/bg-img/phone-hand-mobile.jpg");
+$bg-hand-tablet: url("../img/bg-img/phone-hand-tablet.jpg");
+$bg-hand-desktop: url("../img/bg-img/phone-hand-desktop.png");
 $bg-header3-tablet: url("../img/bg-img/screen-tablet.jpg");
 $bg-header3-desktop: url("../img/bg-img/screen-desktop.jpg");
+$bg-adv-mobile: url("../../img/bg-img/bg-adv-mobile.png");
 $apple-logo: url("../img/apple-logo.svg");
+$android-logo: url("../img/android-logo.svg");
+$microsoft-logo: url("../img/microsoft-logo.svg");
+$adv-friends: url("../img/iphone-3.jpg");
+$heard: url("../img/heart.svg");
+$noun-done: url("../img/yes.svg");
+$noun-none: url("../img/no.svg");
 
 //шрифты
 $base-font: "Open Sans", sans-serif;
@@ -58,7 +65,7 @@ $mobile-width-only: 659px;
 //button-catalog
 @mixin btn-rounded {
   display: block;
-  max-width: 280px;
+  min-width: 280px;
   margin: 0 auto;
   font-family: inherit;
   font-weight: $weight-bold;
@@ -80,8 +87,15 @@ $mobile-width-only: 659px;
   text-transform: uppercase;
 }
 
-//align
-@mixin align-center {
-  align-items: center;
-  text-align: center;
+//ограничение
+@mixin mobile-max-width {
+  width: 280px;
+}
+
+@mixin tablet-max-width {
+  width: 620px;
+}
+
+@mixin desktop-max-width {
+  width: 960px;
 }

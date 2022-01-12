@@ -1,16 +1,55 @@
 .header {
   background-color: $blue-dark;
   color: $white;
+  background-image: $bg-header1-mobile;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__wrapper {
+  min-height: 733px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    min-height: 729px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 853px;
+  }
+
+  &--catalog {
+    min-height: 237px;
+
+    @media (min-width: $tablet-width) {
+      @include tablet-max-width;
+
+      min-height: 440px;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include desktop-max-width;
+
+      min-height: 394px;
+    }
+  }
 }
 
 .header__title {
   font-weight: $weight-light;
   font-size: 24px;
   line-height: 33px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 36px 74px 84px 74px;
 
-  @include align-center;
-}
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    padding: 81px 151px 143px 151px;
+  }
 
-.header__inner-page {
-  min-height: 237px;
+  @media (min-width: $desktop-width) {
+    padding: 81px 110px 104px 104px;
+  }
 }

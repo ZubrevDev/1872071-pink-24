@@ -4,6 +4,5 @@
   font-weight: $weight-normal;
   font-size: 14px;
   line-height: 30px;
-
-  @include align-center;
+  text-align: center;
 }

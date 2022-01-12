@@ -3,7 +3,7 @@
 }
 
 .upload__wrapper {
-  @include align-center;
+  text-align: center;
 }
 
 .upload__text {
@@ -11,8 +11,7 @@
   font-size: 14px;
   line-height: 30px;
   color: $dark;
-
-  @include align-center;
+  text-align: center;
 }
 
 .upload__button {
@@ -21,6 +20,7 @@
   &--submit {
     color: $pink;
     border: 3px solid $pink;
+    margin-bottom: 12px;
   }
 
   &--reset {

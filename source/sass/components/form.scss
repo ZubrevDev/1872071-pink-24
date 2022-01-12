@@ -2,7 +2,6 @@
   border: none;
 }
 
-//desktop
 @media (min-width: $desktop-width) {
   .form fieldset:not(:first-child) {
     border: 2px solid $grey;
@@ -14,7 +13,6 @@
   flex-direction: column;
 }
 
-//desktop
 @media (min-width: $desktop-width) {
   .form__inner--user-data {
     display: flex;
@@ -58,7 +56,10 @@
 }
 
 .form__legend {
-  display: inline-block;
-  margin: 0 auto;
   text-transform: uppercase;
+  font-style: normal;
+  font-weight: $weight-normal;
+  font-size: 14px;
+  line-height: 214%;
+  // align-items: center;
 }

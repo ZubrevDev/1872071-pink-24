@@ -1,7 +1,27 @@
 .toggles {
-  @include align-center;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .toggles__btn {
+  width: 6px;
+  height: 9px;
+  border-radius: 50%;
   border: none;
+  margin-right: 19px;
+  background-color: $dark;
+  opacity: 0.3;
+
+  &--current {
+    background-color: $white;
+    outline: 3px solid $dark;
+    opacity: 1;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
