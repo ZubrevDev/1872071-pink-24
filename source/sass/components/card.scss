@@ -1,10 +1,18 @@
 .card {
   position: relative;
-  width: 280px;
-  padding: 25px 17px;
+  margin-bottom: 20px;
+  // width: 280px;
+  background-color: $light;
+}
 
+.card__panorama {
   @media (min-width: $tablet-width) {
-    width: 300px;
+    @include tablet-max-width;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-max-width;
   }
 }
 
@@ -20,14 +28,31 @@
   text-align: center;
   padding: 13px 20px;
   position: absolute;
-  top: 25px;
+  top: 0;
   right: 0;
 }
 
 .card__photo {
-  &--panorama {
-    min-width: 100%;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    &--panorama {
+      display: block;
+      min-width: 100%;
+    }
   }
+}
+
+.card__info {
+  margin-top: 0;
+  padding-left: 17px;
+  padding-bottom: 26px;
+
+  // @media (min-width: $tablet-width) {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-between;
+  // }
 }
 
 .card__user-name {
@@ -55,6 +80,17 @@
   color: $dark;
 }
 
+.card__activ {
+  @media (min-width: $tablet-width) {
+    &--panorama {
+      justify-content: end;
+    }
+
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .card__button {
   background-image: $heard;
   background-repeat: no-repeat;
@@ -64,6 +100,11 @@
   height: 14px;
   cursor: pointer;
   margin-right: 18px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-left: 16px;
+  }
 }
 
 .card__like {
