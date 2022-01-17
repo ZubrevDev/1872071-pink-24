@@ -1,8 +1,43 @@
 .progress {
   background: $light;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    background: $white;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-max-width;
+    margin: 0;
+    padding: 0;
+  }
 }
 
-.progress__title {
-  @include form-title;
-  text-align: center;
+.progress__list {
+  margin: 0 auto;
+
+  @include mobile-max-width;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    height: 230px;
+  }
+}
+
+.progress__item {
+  @media (min-width: $desktop-width) {
+    &:not(:nth-of-type(n+5)) {
+      margin-right: 57px;
+    }
+  }
 }

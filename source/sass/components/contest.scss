@@ -1,8 +1,38 @@
-.contest__text {
+.contest__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-max-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-max-width;
+  }
+}
+
+.contest__subtitle {
+  @include mobile-max-width;
+
   background-color: $white;
   color: $dark;
   font-weight: $weight-normal;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 214%;
   text-align: center;
+  padding-top: 54px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-max-width;
+
+    font-size: 18px;
+    line-height: 167%;
+    margin-bottom: 82px;
+    padding-top: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-max-width;
+    margin-bottom: 70px;
+  }
 }

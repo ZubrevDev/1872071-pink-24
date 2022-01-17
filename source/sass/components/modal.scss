@@ -3,7 +3,40 @@
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 1px;
   padding-top: 44px;
-  padding-bottom: 52px;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+    height: 377px;
+  }
+}
+
+.modal__failure {
+  height: 289px;
+  padding-right: 22px;
+  padding-left: 22px;
+
+  @media (min-width: $tablet-width) {
+    height: 363px;
+  }
+}
+
+.modal__success {
+  height: 380px;
+  background: $light;
+  border-radius: 0 0 1px 1px;
+
+  @media (min-width: $tablet-width) {
+    height: 432px;
+  }
+}
+
+.modal__content {
+  background-color: $white;
 }
 
 .modal__title {
@@ -20,6 +53,11 @@
   line-height: 24px;
   color: $dark;
   text-align: center;
+}
+
+.modal__close {
+  margin: 0 auto;
+  padding-top: 50px;
 }
 
 .modal__button {

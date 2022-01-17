@@ -1,0 +1,64 @@
+.control {
+  position: relative;
+  display: block;
+  margin-bottom: 47px;
+  padding-left: 59px;
+}
+
+.control__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: $white;
+  border: 2px solid $grey;
+  border-radius: 1px;
+  cursor: pointer;
+  content: "";
+
+  &--platforms {
+    width: 37px;
+    border-radius: 50%;
+  }
+}
+
+.control__input {
+  &:hover ~ .control__mark {
+    border: 2px solid $dark;
+  }
+
+  &:active ~ .control__mark {
+    border: 2px solid $pink;
+  }
+
+  &[type="checkbox"]:checked + .control__mark::before {
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    width: 22px;
+    height: 16px;
+    background-color: $white;
+    background-image: $control-tick;
+    content: "";
+  }
+
+  &[type="radio"]:checked + .control__mark::before {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $pink;
+    content: "";
+  }
+}
+
+.control__label {
+  font-weight: $weight-normal;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+  color: $dark;
+}

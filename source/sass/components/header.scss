@@ -18,12 +18,10 @@
     min-height: 853px;
   }
 
-  &--catalog {
+  &--inner {
     min-height: 237px;
 
     @media (min-width: $tablet-width) {
-      @include tablet-max-width;
-
       min-height: 440px;
     }
 
@@ -36,6 +34,7 @@
 }
 
 .header__title {
+  @include mobile-max-width;
   font-weight: $weight-light;
   font-size: 24px;
   line-height: 33px;
@@ -44,12 +43,14 @@
   padding: 36px 74px 84px 74px;
 
   @media (min-width: $tablet-width) {
+    @include tablet-max-width;
     font-size: 50px;
     line-height: 68px;
     padding: 81px 151px 143px 151px;
   }
 
   @media (min-width: $desktop-width) {
+    @include desktop-max-width;
     padding: 81px 110px 104px 104px;
   }
 }

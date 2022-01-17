@@ -1,8 +1,19 @@
-.emotions__title {
-  font-weight: $weight-normal;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $pink;
-  text-align: center;
+.emotions {
+  @include mobile-max-width;
+
+  margin: 0 auto;
+  margin-bottom: 44px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-max-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-max-width;
+  }
+}
+
+.emotions__input {
+  min-width: 100%;
 }
