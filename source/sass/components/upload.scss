@@ -1,5 +1,12 @@
 .upload {
   background-color: $light;
+  padding-bottom: 41px;
+
+  @media (min-width: $desktop-width) {
+    @include desktop-max-width;
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
 }
 
 .upload__wrapper {
@@ -10,7 +17,6 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-max-width;
-
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: 20px;
@@ -19,6 +25,10 @@
   @media (min-width: $desktop-width) {
     @include desktop-max-width;
     height: 514px;
+    margin: 0;
+    grid-template-columns: 450px 1fr;
+    padding-top: 57px;
+    padding-bottom: 57px;
   }
 }
 
@@ -28,18 +38,38 @@
   background-color: $white;
   font-weight: $weight-normal;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 214%;
   color: $dark;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 52px;
+  padding: 52px 20px;
 
   @media (min-width: $tablet-width) {
     @include tablet-max-width;
+    font-size: 18px;
+    line-height: 167%;
+    padding: 73px 78px;
   }
 
   @media (min-width: $desktop-width) {
     @include desktop-max-width;
+  }
+}
+
+.upload__photo {
+  display: block;
+  margin-bottom: 42px;
+  width: 280px;
+  height: 374px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 300px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 60px;
   }
 }
 
@@ -66,6 +96,7 @@
 
 .upload__button {
   @include btn-rounded;
+  cursor: pointer;
 
   &--submit {
     color: $pink;
@@ -79,6 +110,10 @@
 
     &:active {
       color: rgba(255, 255, 255, 0.3);
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 24px;
     }
 
     @media (min-width: $desktop-width) {
@@ -103,5 +138,9 @@
       background: $dark;
       opacity: 0.3;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 183px;
   }
 }

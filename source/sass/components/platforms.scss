@@ -17,3 +17,15 @@
     margin: 0;
   }
 }
+
+.platforms__item {
+  margin-bottom: 47px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

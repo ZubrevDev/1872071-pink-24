@@ -1,54 +1,150 @@
 .intro {
-  background-color: $blue-dark;
-  background-size: cover;
-  // background-image: $bg-hand-mobile;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // width: 320px;
-  // height: 286px;
   color: $white;
   text-align: center;
-}
-
-.intro__wrapper {
-  @include mobile-max-width;
-
-  min-height: 271px;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     @include tablet-max-width;
+    margin: 0 auto;
+    background-image: $bg-hand-tablet;
+    background-repeat: no-repeat;
+    background-size: 660px 545px;
+    background-position: bottom;
+    position: relative;
 
-    min-height: 619px;
-    padding-top: 74px;
-    padding-bottom: 119px;
+    @media (min-resolution: 2dppx) {
+      background-image: $bg-hand2x-tablet;
+    }
+
+    &::after {
+      content: "";
+      background-image: $bg-screen-tablet;
+      background-repeat: no-repeat;
+      background-size: 195px 346px;
+      width: 195px;
+      height: 346px;
+      position: absolute;
+      top: 150px;
+      right: 75px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: $bg-screen2x-tablet;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
     @include desktop-max-width;
+    height: 743px;
+    background-image: $bg-hand-desktop;
+    background-size: auto 645px;
+    background-position: bottom;
 
-    min-height: 743px;
-    padding-top: 98px;
-    padding-bottom: 130px;
+    &::after {
+      content: "";
+      background-image: $bg-screen-desktop;
+      background-repeat: no-repeat;
+      background-size: 230px 408px;
+      width: 230px;
+      height: 408px;
+      position: absolute;
+      top: 162px;
+      right: 201px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: $bg-screen2x-desktop;
+      }
+    }
   }
 }
 
-.intro__sudtitle {
+.intro__wrapper {
+  min-height: 667px;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 619px;
+    width: 300px;
+    padding-top: 74px;
+    padding-bottom: 119px;
+    position: relative;
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 478px;
+  }
+}
+
+.intro__subtitle {
+  @include mobile-max-width;
   font-weight: $weight-light;
   font-size: 24px;
   line-height: 29px;
-  margin-bottom: 300px;
+  height: 396px;
+  background-image: $bg-hand-mobile;
+  background-repeat: no-repeat;
+  background-size: 320px 286px;
+  background-position: bottom left;
+  margin-bottom: 0;
+  position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: $bg-hand2x-mobile;
+    background-size: 320px 286px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 127px;
+    align-items: start;
+    background-image: none;
+  }
+
+  &::after {
+    content: "";
+    background-image: $bg-screen-mobile;
+    background-repeat: no-repeat;
+    background-size: 111px 197px;
+    width: 111px;
+    height: 197px;
+    position: absolute;
+    top: 142px;
+    left: 104px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: $bg-screen2x-mobile;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: none;
+    }
+  }
+}
+
+.intro__downloads {
+  width: 100%;
+  background-color: $blue-dark;
+  padding-top: 28px;
+  padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    width: 300px;
+  }
 }
 
 .intro__button {
   @include btn-rounded;
-
+  padding-top: 21px;
+  padding-bottom: 21px;
   color: $white;
   border: 3px solid $white;
   border-radius: 30px;
-  padding: 21px 39px;
   margin-bottom: 32px;
   width: 280px;
 
@@ -68,6 +164,8 @@
 }
 
 .intro__list {
+  @include mobile-max-width;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,6 +202,9 @@
 }
 
 .intro__legend {
+  @include mobile-max-width;
+  margin: 0 auto;
+  margin-top: 28px;
   font-weight: $weight-light;
   font-size: 14px;
   line-height: 24px;

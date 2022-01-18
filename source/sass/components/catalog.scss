@@ -7,14 +7,10 @@
   min-width: 280px;
   padding: 54px 20px;
   margin: 0 auto;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    @include tablet-max-width;
     padding-top: 100px;
-  }
-
-  @media (min-width: $desktop-width) {
-    @include desktop-max-width;
   }
 }
 
@@ -39,6 +35,23 @@
   @media (min-width: $desktop-width) {
     @include desktop-max-width;
     margin-bottom: 97px;
+  }
+}
+
+.catalog__panorama {
+  position: relative;
+}
+
+.catalog__photo-panorama {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
   }
 }
 

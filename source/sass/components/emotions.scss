@@ -11,9 +11,25 @@
 
   @media (min-width: $desktop-width) {
     @include desktop-max-width;
+    padding: 0;
   }
 }
 
 .emotions__input {
-  min-width: 100%;
+  margin-top: 22px;
+  width: 276px;
+  height: 197px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 53px;
+    width: 496px;
+    height: 189px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 816px;
+    height: 124px;
+  }
 }
