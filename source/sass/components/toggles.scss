@@ -1,19 +1,24 @@
 .toggles {
   text-align: center;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
-    display: none;
+    position: relative;
   }
 }
 
 .toggles__btn {
   width: 6px;
-  height: 9px;
+  height: 12px;
   border-radius: 50%;
   border: none;
   margin-right: 19px;
   background-color: $dark;
   opacity: 0.3;
+
+  &--previous {
+    display: none;
+  }
 
   &--current {
     background-color: $white;
@@ -21,7 +26,46 @@
     opacity: 1;
   }
 
+  &:not(.toggles__btn--current):hover {
+    opacity: 0.6;
+  }
+
   &:last-child {
     margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--previous {
+      display: block;
+      border-radius: 0;
+      background-color: transparent;
+      background-image: var(--btn-left);
+      background-repeat: no-repeat;
+      background-size: 22px 41px;
+      width: 22px;
+      height: 41px;
+      position: absolute;
+      top: 50%;
+      left: -800px;
+    }
+
+    &--current,
+    &--last {
+      display: none;
+    }
+
+    &--next {
+      display: block;
+      border-radius: 0;
+      background-color: transparent;
+      background-image: var(--btn-right);
+      background-repeat: no-repeat;
+      background-size: 22px 41px;
+      width: 22px;
+      height: 41px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+    }
   }
 }

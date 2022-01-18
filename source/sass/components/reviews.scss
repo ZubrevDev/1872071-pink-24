@@ -19,12 +19,33 @@
     @include desktop-max-width;
 
     min-height: 292px;
+    display: grid;
+    grid-template-columns: 1fr 690px 1fr;
+  }
+}
+
+.reviews__list {
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
   }
 }
 
 .reviews__author-info {
   display: flex;
   flex-direction: column;
+
+  &::before {
+    @media (min-width: $desktop-width) {
+      content: "";
+      background-image: var(--rev-q);
+      background-repeat: no-repeat;
+      background-size: 79px 63px;
+      background-position: top;
+      width: 79px;
+      height: 63px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .reviews__author-name {

@@ -13,7 +13,9 @@
   @media (min-width: $tablet-width) {
     @include tablet-max-width;
 
-    min-height: 725px;
+    min-height: 750px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,7 +38,8 @@
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 54px;
-    min-width: 588px;
+    max-width: 588px;
+    margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,38 +50,121 @@
 }
 
 .advantages__list {
-  padding: 53px 20px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: 547px;
+    margin-right: 0;
+    outline-offset: -5px;
+    width: 610px;
+    display: grid;
+    grid-template-columns: 260px 260px;
+    gap: 20px;
+
+    &::before {
+      content: "";
+      background-image: var(--adv3-bgi);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      outline-offset: -5px;
+      width: 260px;
+      height: 547px;
+      margin: 0 auto;
+      grid-column: 1 / 2;
+      grid-row: 1 / 4;
+
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
+    }
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    flex-direction: row;
+    padding: 0;
     min-height: 551px;
+    width: 940px;
   }
 }
 
 .advantages__item {
+  position: relative;
   margin-bottom: 43px;
+  display: flex;
+  flex-direction: column;
 
-  &--friends {
-    display: block;
-    height: 400px;
-    background-image: $adv-friends;
+  &--friends::after {
+    content: "";
+    background-image: var(--adv3-bgi);
     background-repeat: no-repeat;
-    background-position: center bottom;
-    margin-bottom: -50px;
+    background-size: 100%;
+    background-position: center 43px;
+    width: 157px;
+    height: 320px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
+    outline-offset: -5px;
     margin-bottom: 46px;
+
+    &--joy {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      outline-offset: -5px;
+    }
+
+    &--change {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      outline-offset: -5px;
+    }
+
+    &--friends {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+      outline-offset: -5px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 68px;
     margin-bottom: 59px;
-    min-width: 252px;
 
-    &:last-child {
-      margin-right: 0;
+    &--joy::before {
+      content: "";
+      background-image: var(--adv1-bgi);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: left 43px;
+      width: 186px;
+      height: 382px;
+      margin: 0 auto;
+    }
+
+    &--change::before {
+      content: "";
+      background-image: var(--adv2-bgi);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: left 43px;
+      width: 186px;
+      height: 382px;
+      margin: 0 auto;
+    }
+
+    &--friends::before {
+      content: "";
+      background-image: var(--adv3-bgi);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: left 43px;
+      width: 186px;
+      height: 382px;
+      margin: 0 auto;
     }
   }
 }
@@ -90,10 +176,18 @@
   color: $black;
   margin-bottom: 24px;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 24px;
+    text-align: start;
+    outline-offset: -5px;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 30px;
     line-height: 100%;
     margin-bottom: 35px;
+    text-align: center;
   }
 }
 
@@ -103,8 +197,16 @@
   line-height: 171%;
   color: $dark;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    text-align: start;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 167%;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
