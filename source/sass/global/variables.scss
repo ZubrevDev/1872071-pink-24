@@ -100,7 +100,7 @@ $mobile-width-only: 659px;
 @mixin desktop-max-width {
   width: 960px;
 }
- //Ul-decoration-in-global
+//ul-decoration-in-global
 @mixin ul-decoration {
   list-style: none;
   padding-inline-start: 0;
