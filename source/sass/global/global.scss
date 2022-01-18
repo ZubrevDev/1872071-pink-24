@@ -11,8 +11,8 @@ a {
   text-decoration: none;
 }
 
- ul {
-   @include ul-decoration;
+ul {
+  @include ul-decoration;
 }
 
 *,
