@@ -6,11 +6,15 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    @include tablet-max-width;
+
     margin: 0;
     margin-bottom: 51px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 431px;
+    margin-top: 14px;
     margin-bottom: 34px;
   }
 }
@@ -18,5 +22,12 @@
 .user-data__label {
   @media (min-width: $tablet-width) {
     margin-right: 20px;
+  }
+}
+
+.user-data__input {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 59px;
   }
 }

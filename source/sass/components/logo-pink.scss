@@ -1,6 +1,55 @@
+.logo-pink__nav {
+  &:first-child {
+    margin-right: 12px;
+  }
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: $white;
+    fill-opacity: 0.3;
+  }
+
+  &--icon {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      fill: $white;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--word {
+    fill: $white;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      fill: $white;
+    }
+  }
+}
+
 .logo-pink__link {
   &:first-child {
     margin-right: 12px;
+  }
+
+  &--icon {
+    fill: $pink;
   }
 
   &--word:hover {
@@ -17,6 +66,14 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+
+    &:hover {
+      fill: $pink;
+    }
+
+    &:active {
+      fill-opacity: 0.3;
+    }
 
     &--icon {
       display: none;

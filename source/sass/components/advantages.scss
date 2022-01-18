@@ -63,15 +63,41 @@
 
     &::before {
       content: "";
-      background-image: var(--adv3-bgi);
+      background-image: url("../img/advan-screen-3.jpg");
+      background-repeat: no-repeat;
+      background-size: 237px 421px;
+      width: 237px;
+      height: 421px;
+      position: absolute;
+      top: 128px;
+      left: 15px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/advan-screen-3@2x.jpg");
+        background-size: 237px 421px;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../img/advan-iphone-3.png");
       background-repeat: no-repeat;
       background-size: 100%;
-      outline-offset: -5px;
-      width: 260px;
+      background-position: center 65px;
+      width: 268px;
       height: 547px;
       margin: 0 auto;
       grid-column: 1 / 2;
       grid-row: 1 / 4;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/advan-iphone-3@2x.png");
+        background-size: 268px 547px;
+      }
 
       @media (min-width: $desktop-width) {
         display: none;
@@ -93,20 +119,76 @@
   display: flex;
   flex-direction: column;
 
-  &--friends::after {
-    content: "";
-    background-image: var(--adv3-bgi);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center 43px;
-    width: 157px;
-    height: 320px;
-    margin: 0 auto;
+  &--friends {
+    &::before {
+      content: "";
+      background-image: url("../img/advan-screen-3.jpg");
+      background-repeat: no-repeat;
+      background-size: 136px 245px;
+      width: 136px;
+      height: 245px;
+      position: absolute;
+      top: 240px;
+      left: 72px;
 
-    @media (min-width: $tablet-width) {
-      display: none;
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/advan-screen-3@2x.jpg");
+        background-size: 157px 320px;
+      }
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: block;
+        background-size: 100%;
+        width: 165px;
+        height: 294px;
+        position: absolute;
+        top: 87px;
+        left: 58px;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/advan-screen-3@2x.jpg");
+          background-size: 165px 294px;
+        }
+      }
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../img/advan-iphone-3.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center 37px;
+      width: 157px;
+      height: 320px;
+      margin: 0 auto;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/advan-iphone-3@2x.png");
+        background-size: 157px 320px;
+      }
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: block;
+        background-position: left 43px;
+        width: 186px;
+        height: 382px;
+        margin: 0 auto;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/advan-iphone-3@2x.png");
+        }
+      }
     }
   }
+
 
   @media (min-width: $tablet-width) {
     outline-offset: -5px;
@@ -132,39 +214,51 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 59px;
-
-    &--joy::before {
+    &:not(:last-child)::before {
       content: "";
-      background-image: var(--adv1-bgi);
+      background-image: url("../img/advan-iphone-3.png");
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: left 43px;
       width: 186px;
       height: 382px;
       margin: 0 auto;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/advan-iphone-3@2x.png");
+      }
     }
 
-    &--change::before {
+    &--joy::after {
       content: "";
-      background-image: var(--adv2-bgi);
+      background-image: url("../img/advan-screen-1.jpg");
       background-repeat: no-repeat;
       background-size: 100%;
-      background-position: left 43px;
-      width: 186px;
-      height: 382px;
-      margin: 0 auto;
+      width: 165px;
+      height: 294px;
+      position: absolute;
+      top: 85px;
+      left: 78px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/advan-screen-1@2x.jpg");
+      }
     }
 
-    &--friends::before {
+    &--change::after {
       content: "";
-      background-image: var(--adv3-bgi);
+      background-image: url("../img/advan-screen-2.jpg");
       background-repeat: no-repeat;
       background-size: 100%;
-      background-position: left 43px;
-      width: 186px;
-      height: 382px;
-      margin: 0 auto;
+      width: 165px;
+      height: 294px;
+      position: absolute;
+      top: 85px;
+      left: 68px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/advan-screen-2@2x.jpg");
+      }
     }
   }
 }
@@ -184,10 +278,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 59px;
     font-size: 30px;
     line-height: 100%;
     margin-bottom: 35px;
     text-align: center;
+
+    &--friends {
+      order: 2;
+    }
   }
 }
 
@@ -208,5 +307,9 @@
     text-align: center;
     padding-left: 24px;
     padding-right: 24px;
+
+    &--friends {
+      order: 3;
+    }
   }
 }

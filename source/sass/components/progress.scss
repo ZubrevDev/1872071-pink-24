@@ -12,30 +12,48 @@
     @include desktop-max-width;
     margin: 0;
     padding: 0;
+    height: 228px;
   }
 }
 
 .progress__list {
-  margin: 0 auto;
-
   @include mobile-max-width;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    width: 820px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
     height: 230px;
   }
 }
 
 .progress__item {
+  margin-top: 44px;
+  margin-bottom: 47px;
+
+  &:last-child {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 54px;
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 47px;
+    width: 260px;
+
     &:not(:nth-of-type(n+5)) {
       margin-right: 57px;
     }

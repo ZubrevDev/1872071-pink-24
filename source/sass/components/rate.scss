@@ -77,6 +77,34 @@
   }
 }
 
+.rate__standart {
+  position: relative;
+}
+
+.rate__ribbon {
+  &--mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: $pink;
+  }
+}
+
+.rate__ribbon-info {
+  display: block;
+  font-family: $base-font;
+  color: $white;
+  font-weight: $weight-normal;
+  font-size: 14px;
+  line-height: 214%;
+  text-transform: uppercase;
+  text-align: center;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
 .rate__name {
   font-weight: $weight-bold;
   font-size: 16px;
@@ -125,7 +153,7 @@
 }
 
 .rate__done {
-  background-image: $noun-done;
+  background-image: var(--done);
   background-repeat: no-repeat;
   background-position: 93%;
   background-size: 31px 21px;
@@ -138,7 +166,7 @@
 }
 
 .rate__none {
-  background-image: $noun-none;
+  background-image: var(--none);
   background-repeat: no-repeat;
   background-position: 93%;
   background-size: 27px 27px;

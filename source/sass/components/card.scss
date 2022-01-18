@@ -1,18 +1,44 @@
 .card {
   position: relative;
   margin-bottom: 20px;
-  // width: 280px;
   background-color: $light;
 }
 
 .card__panorama {
+  &::before {
+    content: "Панорама дня";
+    width: 140px;
+    height: 36px;
+    background-color: $pink;
+    font-family: $base-font;
+    font-weight: $weight-bold;
+    font-size: 12px;
+    line-height: 200%;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: -137px;
+    right: 0;
+
+    @media (min-width: $tablet-width) {
+      top: -416px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -430px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     @include tablet-max-width;
-    align-items: center;
+    margin-top: 0;
+    height: 121px;
   }
 
   @media (min-width: $desktop-width) {
-    @include desktop-max-width;
+    min-height: 96px;
+    margin-right: 0;
   }
 }
 
@@ -33,13 +59,19 @@
 }
 
 .card__photo {
+  display: block;
+  width: 280px;
+  height: 180px;
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    &--panorama {
-      display: block;
-      min-width: 100%;
-    }
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 400px;
   }
 }
 
@@ -47,12 +79,21 @@
   margin-top: 0;
   padding-left: 17px;
   padding-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  // @media (min-width: $tablet-width) {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: space-between;
-  // }
+  @media (min-width: $tablet-width) {
+    height: 155px;
+  }
+}
+
+.card__container {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .card__user-name {
@@ -61,6 +102,11 @@
   font-size: 14px;
   line-height: 24px;
   color: $dark;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
 }
 
 .card__period {
@@ -78,16 +124,23 @@
   font-size: 14px;
   line-height: 24px;
   color: $dark;
+  margin: 0;
 }
 
 .card__activ {
-  @media (min-width: $tablet-width) {
-    &--panorama {
+  &--panorama {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 30px;
+      right: 0;
       justify-content: end;
     }
+  }
 
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -100,10 +153,11 @@
   height: 14px;
   cursor: pointer;
   margin-right: 18px;
+  vertical-align: middle;
 
   @media (min-width: $tablet-width) {
     order: 2;
-    margin-left: 16px;
+    margin-right: 0 auto;
   }
 }
 
@@ -112,4 +166,11 @@
   text-align: right;
   text-transform: uppercase;
   color: $pink;
+  vertical-align: middle;
+
+  &--panorama {
+    @media (min-width: $tablet-width) {
+      margin-right: 16px;
+    }
+  }
 }

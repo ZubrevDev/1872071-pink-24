@@ -6,12 +6,16 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-max-width;
+    margin: 0;
+    padding-bottom: 37px;
   }
 
   @media (min-width: $desktop-width) {
     @include desktop-max-width;
     display: flex;
     justify-content: space-between;
+    padding-top: 44px;
+    padding-bottom: 23px;
   }
 }
 
@@ -20,6 +24,23 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
+  }
+}
+
+.user-contacts__phone {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.user-contacts__email {
+  @media (min-width: $tablet-width) {
+    position: relative;
   }
 }
 
@@ -32,5 +53,40 @@
 .user-contacts__input {
   @media (min-width: $tablet-width) {
     order: 1;
+    width: 496px;
+    height: 59px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 371px;
+  }
+}
+
+.user-contacts__icon {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    background-color: $grey;
+    width: 59px;
+    height: 59px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    right: 59px;
+
+    &--phone {
+      background-image: var(--phone-form);
+    }
+
+    &--email {
+      background-image: var(--email-form);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
   }
 }

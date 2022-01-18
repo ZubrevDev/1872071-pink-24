@@ -4,6 +4,26 @@
   background-image: $bg-header1-mobile;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: $bg-header2x-mobile;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: $bg-header1-tablet;
+
+    @media (min-resolution: 2dppx) {
+      background-image: $bg-header2x-tablet;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: $bg-header1-desktop;
+
+    @media (min-resolution: 2dppx) {
+      background-image: $bg-header2x-desktop;
+    }
+  }
 }
 
 .header__wrapper {
@@ -40,7 +60,11 @@
   line-height: 33px;
   text-align: center;
   margin: 0 auto;
-  padding: 36px 74px 84px 74px;
+  padding-top: 29px;
+
+  &--inner {
+    padding-top: 36px;
+  }
 
   @media (min-width: $tablet-width) {
     @include tablet-max-width;
