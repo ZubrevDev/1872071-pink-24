@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
 }
 
 img {
@@ -11,12 +12,20 @@ a {
 }
 
 ul {
-  list-style: none;
-  padding-inline-start: 0;
+  @include ul-decoration;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+:root {
+  --adv1-bgi: url("../img/adv-1.png");
+  --adv2-bgi: url("../img/adv-2.png");
+  --adv3-bgi: url("../img/adv-3.png");
+  --rev-q: url("../img/quotes.png");
+  --btn-left: url("../img/left-arrow.png");
+  --btn-right: url("../img/right-arrow.png");
 }

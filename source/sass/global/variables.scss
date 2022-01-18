@@ -27,14 +27,14 @@ $bg-adv-mobile: url("../../img/bg-img/bg-adv-mobile.png");
 $apple-logo: url("../img/apple-logo.svg");
 $android-logo: url("../img/android-logo.svg");
 $microsoft-logo: url("../img/microsoft-logo.svg");
-$adv-friends: url("../img/iphone-3.jpg");
 $heard: url("../img/heart.svg");
 $noun-done: url("../img/yes.svg");
 $noun-none: url("../img/no.svg");
 $control-tick: url("../img/tick.png");
+$diagram: url("../img/diagram.png");
 
 //шрифты
-$base-font: "Open Sans", sans-serif;
+$base-font: "Open Sans","Arial", sans-serif;
 $weight-light: 300;
 $weight-normal: 400;
 $weight-bold: 700;
@@ -99,4 +99,9 @@ $mobile-width-only: 659px;
 
 @mixin desktop-max-width {
   width: 960px;
+}
+//ul-decoration-in-global
+@mixin ul-decoration {
+  list-style: none;
+  padding-inline-start: 0;
 }
