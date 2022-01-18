@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+
 }
 
 img {
@@ -22,10 +23,11 @@ ul {
 }
 
 :root {
-  --adv1-bgi: url("../img/adv-1.png");
-  --adv2-bgi: url("../img/adv-2.png");
-  --adv3-bgi: url("../img/adv-3.png");
   --rev-q: url("../img/quotes.png");
   --btn-left: url("../img/left-arrow.png");
   --btn-right: url("../img/right-arrow.png");
+  --done: url("../img/yes.svg");
+  --none: url("../img/no.svg");
+  --email-form: url("../img/form-mail-icon.png");
+  --phone-form: url("../img/form-phone-icon.png");
 }

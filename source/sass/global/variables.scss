@@ -14,22 +14,34 @@ $bg-header: #1d2631;
 $bg-main-nav: rgba(0, 0, 0, 0.3);
 $bg-main-nav-list: #283645;
 
-//фоновые рисунки
+//чб фон
 $bg-header1-mobile: url("../img/bg-img/back-mobile.jpg");
+$bg-header2x-mobile: url("../img/bg-img/back-mobile@2x.jpg");
 $bg-header1-tablet: url("../img/bg-img/back-tablet.jpg");
+$bg-header2x-tablet: url("../img/bg-img/back-tablet@2x.jpg");
 $bg-header1-desktop: url("../img/bg-img/back-desktop.jpg");
-$bg-hand-mobile: url("../img/bg-img/phone-hand-mobile.jpg");
-$bg-hand-tablet: url("../img/bg-img/phone-hand-tablet.jpg");
+$bg-header2x-desktop: url("../img/bg-img/back-desktop@2x.jpg");
+//рука с телефоном
+$bg-hand-mobile: url("../img/bg-img/phone-hand-mobile.png");
+$bg-hand2x-mobile: url("../img/bg-img/phone-hand-mobile@2x.png");
+$bg-hand-tablet: url("../img/bg-img/phone-hand-tablet.png");
+$bg-hand2x-tablet: url("../img/bg-img/phone-hand-tablet@2x.png");
 $bg-hand-desktop: url("../img/bg-img/phone-hand-desktop.png");
-$bg-header3-tablet: url("../img/bg-img/screen-tablet.jpg");
-$bg-header3-desktop: url("../img/bg-img/screen-desktop.jpg");
-$bg-adv-mobile: url("../../img/bg-img/bg-adv-mobile.png");
+$bg-hand2x-desktop: url("../img/bg-img/phone-hand-desktop@2x.png");
+//розовый экран intro
+$bg-screen-mobile: url("../img/bg-img/screen-mobile.jpg");
+$bg-screen2x-mobile: url("../img/bg-img/screen-mobile@2x.jpg");
+$bg-screen-tablet: url("../img/bg-img/screen-tablet.jpg");
+$bg-screen2x-tablet: url("../img/bg-img/screen-tablet@2x.jpg");
+$bg-screen-desktop: url("../img/bg-img/screen-desktop.jpg");
+$bg-screen2x-desktop: url("../img/bg-img/screen-desktop@2x.jpg");
+
+//фоновые рисунки
+$bg-adv-mobile: url("../img/bg-img/bg-adv-mobile.png");
 $apple-logo: url("../img/apple-logo.svg");
 $android-logo: url("../img/android-logo.svg");
 $microsoft-logo: url("../img/microsoft-logo.svg");
 $heard: url("../img/heart.svg");
-$noun-done: url("../img/yes.svg");
-$noun-none: url("../img/no.svg");
 $control-tick: url("../img/tick.png");
 $diagram: url("../img/diagram.png");
 
@@ -45,7 +57,6 @@ $tablet-width: 660px;
 $desktop-width: 1200px;
 $mobile-width-only: 659px;
 
-
 //button-form
 @mixin btn-form {
   display: block;
@@ -60,22 +71,22 @@ $mobile-width-only: 659px;
   font-family: inherit;
   font-weight: $weight-bold;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 167%;
+  cursor: pointer;
 }
 
 //button-catalog
 @mixin btn-rounded {
   display: block;
   min-width: 280px;
+  min-height: 55px;
   margin: 0 auto;
   font-family: inherit;
   font-weight: $weight-bold;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 100%;
   box-sizing: border-box;
   border-radius: 30px;
-  padding-top: 21px;
-  padding-bottom: 21px;
 }
 
 //Titles
