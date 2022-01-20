@@ -43,6 +43,19 @@
   }
 }
 
+.logo-pink__total {
+  display: flex;
+  align-items: flex-end;
+
+  &:hover svg {
+    fill: $pink;
+  }
+
+  &:active svg {
+    fill-opacity: 0.3;
+  }
+}
+
 .logo-pink__link {
   &:first-child {
     margin-right: 12px;

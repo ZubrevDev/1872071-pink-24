@@ -40,6 +40,16 @@
         <path d="M38.0741 19.3828C37.3416 19.3828 36.6391 19.0967 36.1211 18.5875C35.6031 18.0783 35.3121 17.3876 35.3121 16.6675C35.3121 17.3859 35.0225 18.0751 34.5066 18.584C33.9908 19.093 33.2909 19.3802 32.5601 19.3828C33.2899 19.3828 33.9899 19.6679 34.506 20.1752C35.0221 20.6826 35.3121 21.3708 35.3121 22.0883C35.3147 21.3699 35.6069 20.6817 36.1246 20.1746C36.6423 19.6675 37.3433 19.3828 38.0741 19.3828Z" fill="#283645"/>
         <path d="M10.785 33.6406C10.056 33.6354 9.35856 33.347 8.84491 32.8384C8.33126 32.3297 8.04302 31.642 8.04303 30.9253C8.04304 31.6437 7.75342 32.3329 7.2376 32.8419C6.72178 33.3508 6.02182 33.638 5.29102 33.6406C6.02182 33.6433 6.72178 33.9305 7.2376 34.4394C7.75342 34.9484 8.04304 35.6375 8.04303 36.356C8.04302 35.6392 8.33126 34.9516 8.84491 34.4429C9.35856 33.9342 10.056 33.6459 10.785 33.6406Z" fill="#283645"/>
       </symbol>
+      <symbol viewBox="0 0 44 44" id="edition-crop">
+        <path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z"/>
+      </symbol>
+      <symbol viewBox="0 0 48 43" id="edition-fill">
+        <path d="M33.12 17.88 15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24ZM10.41 20 20 10.42 29.59 20H10.41ZM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7ZM48 40H0v3h48v-3Z"/>
+      </symbol>
+      <symbol viewBox="0 0 32 32" id="edition-contrast">
+        <path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24Zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32Z"/>
+        <path d="M16 24.29a8.52 8.52 0 0 0 0-17"/>
+      </symbol>
       <symbol viewBox="0 0 18 14" id="icon-twitter">
         <path d="M11.5641 0.168904C12.2458 -0.0461515 12.9837 -0.0560928 13.6719 0.140507C14.3602 0.337107 14.9633 0.730138 15.3947 1.26319C16.1053 1.05385 16.8055 0.815959 17.5263 0.606617C17.5164 0.925848 17.4299 1.23907 17.2732 1.52372C17.1165 1.80837 16.8935 2.05738 16.6201 2.2528C16.8726 2.27877 17.1281 2.25112 17.3673 2.17197C17.6064 2.09281 17.8228 1.96424 18 1.79606C17.901 2.20987 17.6999 2.59695 17.4123 2.92708C17.1247 3.2572 16.7585 3.52144 16.3421 3.69916C16.095 9.96988 12.9748 14.1662 5.65332 13.9949H5.14874C4.70595 13.9949 0.731121 13.5667 0 12.2441C1.75201 12.4899 3.53888 12.0976 4.98398 11.1498C3.95423 10.8643 2.13158 10.7026 1.82265 8.40934C2.2108 8.54337 2.6321 8.57306 3.03776 8.49498C1.76087 7.70519 0.339817 7.0391 0.422197 4.99327C0.819634 5.29882 1.3269 5.45507 1.84325 5.43098C1.10183 5.20261 -0.24714 2.30989 0.895881 0.825474C2.82151 2.54778 4.86041 4.17493 8.48512 4.3367C8.71167 2.20522 9.68993 0.777896 11.5641 0.168904Z" fill="#D22856"/>
       </symbol>
@@ -58,18 +68,20 @@
         <nav class="nav nav--closed nav--nojs">
           <div class="nav__wrapper">
             <div class="nav__logo logo-pink">
-              <a class="logo-pink__nav logo-pink__nav--icon" href="index.html">
-                <svg width="59" height="40" role="img" aria-label="Логотип приложения Пинк." xmlns="http://www.w3.org/2000/svg">
+              <div class="logo-pink__total">
+                <a class="logo-pink__nav logo-pink__nav--icon" href="index.html" aria-label="Логотип приложения Пинк.">
+                <svg width="59" height="40" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="#logo-pink-icon"></use>
                 </svg>
-              </a>
-              <a class="logo-pink__nav logo-pink__nav--word" href="index.html">
-                <svg width="74" height="23" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип Пинк.">
-                  <use xlink:href="#logo-pink-word"></use>
-                </svg>
-              </a>
-              <a class="logo-pink__nav logo-pink__nav--desktop" href="index.html">
-                <svg width="147" height="40" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип Пинк.">
+                </a>
+                <a class="logo-pink__nav logo-pink__nav--word" href="index.html" aria-label="Логотип приложения Пинк.">
+                  <svg width="74" height="23" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#logo-pink-word"></use>
+                  </svg>
+                </a>
+              </div>
+              <a class="logo-pink__nav logo-pink__nav--desktop" href="index.html" aria-label="Логотип приложения Пинк.">
+                <svg width="147" height="40" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="#nav-logo-desktop"></use>
                 </svg>
               </a>
@@ -119,147 +131,125 @@
         <div class="catalog__wrapper">
           <h2 class="visually-hidden">Фотографии</h2>
           <p class="catalog__subtitle">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-          <div class="catalog__panorama">
+          <figure class="catalog__panorama">
             <picture>
               <source media="(min-width: 1200px)" srcset="./img/cards/panorama-desktop.jpg 1x, ./img/cards/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="./img/cards/panorama-tablet.jpg 1x, ./img/cards/panorama-tablet@2x.jpg 2x">
               <img class="catalog__photo-panorama" src="./img/cards/panorama-mobile.jpg"  srcset="./img/cards/panorama-mobile@2x.jpg 2x" alt="Панорама леса с моста">
             </picture>
-          </div>
+          </figure>
           <ul class="catalog__list">
             <li class="catalog__item card">
-              <div class="card__panorama">
-                <div class="card__info">
-                  <div class="card__container">
-                    <p class="card__user-name">Анна <span class="card__period">(5 минут назад)</span></p>
-                    <p class="card__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                  </div>
-                  <div class="card__activ card__activ--panorama">
-                    <button class="card__button" type="button">
-                      <span class="visually-hidden">Нравится эта фотография</span>
-                    </button>
-                    <span class="card__like card__like--panorama">Нравится: 215</span>
-                  </div>
-                </div>
+              <div class="card__info card__info--panorama">
+                <p class="card__user-name">Анна <span class="card__period">(5 минут назад)</span></p>
+                <p class="card__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <button class="card__button card__button--panorama" type="button">
+                  <span class="visually-hidden">Нравится эта фотография</span>
+                </button>
+                <span class="card__like card__like--panorama">Нравится: 215</span>
               </div>
             </li>
-            <li class="catalog__container">
-              <ul class="catalog__mode">
-                <li class="catalog__item card">
-                  <picture>
-                    <source media="(min-width: 1200px)" srcset="./img/cards/photo-1-desktop.jpg 1x, ./img/cards/photo-1-desktop@2x.jpg 2x">
-                    <source media="(min-width: 660px)" srcset="./img/cards/photo-1-tablet.jpg 1x, ./img/cards/photo-1-tablet@2x.jpg 2x">
-                    <img class="card__photo" src="./img/cards/photo-1-mobile.jpg" srcset="./img/cards/photo-1-mobile@2x.jpg 2x" alt="Белый автомобиль">
-                  </picture>
-                  <div class="card__info">
-                    <div class="card__container">
-                      <p class="card__user-name">Левон <span class="card__period">(5 часов назад)</span></p>
-                      <p class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                    </div>
-                    <div class="card__activ">
-                      <button class="card__button" type="button">
-                        <span class="visually-hidden">Нравится эта фотография</span>
-                      </button>
-                      <span class="card__like">Нравится: 356</span>
-                    </div>
-                  </div>
-                </li>
-                <li class="catalog__item card">
-                  <picture>
-                    <source media="(min-width: 1200px)" srcset="./img/cards/photo-2-desktop.jpg 1x, ./img/cards/photo-2-desktop@2x.jpg 2x">
-                    <source media="(min-width: 660px)" srcset="./img/cards/photo-2-tablet.jpg 1x, ./img/cards/photo-2-tablet@2x.jpg 2x">
-                    <img class="card__photo" src="./img/cards/photo-2-mobile.jpg" srcset="./img/cards/photo-2-mobile@2x.jpg 2x" alt="Барабанная установка">
-                  </picture>
-                  <div class="card__info">
-                    <div class="card__container">
-                      <p class="card__user-name">Антон <span class="card__period">(12 часов назад)</span></p>
-                      <p class="card__text">Соседи будут рады!</p>
-                    </div>
-                    <div class="card__activ">
-                      <button class="card__button" type="button">
-                        <span class="visually-hidden">Нравится эта фотография</span>
-                      </button>
-                      <span class="card__like">Нравится: 666</span>
-                    </div>
-                  </div>
-                </li>
-                <li class="catalog__item card">
-                  <picture>
-                    <source media="(min-width: 1200px)" srcset="./img/cards/photo-3-desktop.jpg 1x, ./img/cards/photo-3-desktop@2x.jpg 2x">
-                    <source media="(min-width: 660px)" srcset="./img/cards/photo-3-tablet.jpg 1x, ./img/cards/photo-3-tablet@2x.jpg 2x">
-                    <img class="card__photo" src="./img/cards/photo-3-mobile.jpg" srcset="./img/cards/photo-3-mobile@2x.jpg 2x" alt="Небо и небоскреб сквозь атриум">
-                  </picture>
-                  <div class="card__info">
-                    <div class="card__container">
-                      <p class="card__user-name">Борис <span class="card__period">(20 часов назад)</span></p>
-                      <p class="card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                    </div>
-                    <div class="card__activ">
-                      <button class="card__button" type="button">
-                        <span class="visually-hidden">Нравится эта фотография</span>
-                      </button>
-                      <span class="card__like">Нравится: 215</span>
-                    </div>
-                  </div>
-                </li>
-                <li class="catalog__item card">
-                  <picture>
-                    <source media="(min-width: 1200px)" srcset="./img/cards/photo-4-desktop.jpg 1x, ./img/cards/photo-4-desktop@2x.jpg 2x">
-                    <source media="(min-width: 660px)" srcset="./img/cards/photo-4-tablet.jpg 1x, ./img/cards/photo-4-tablet@2x.jpg 2x">
-                    <img class="card__photo" src="./img/cards/photo-4-mobile.jpg" srcset="./img/cards/photo-4-mobile@2x.jpg 2x" alt="Сельхоз ярмарка">
-                  </picture>
-                  <div class="card__info">
-                    <div class="card__container">
-                      <p class="card__user-name">Сергей <span class="card__period">(25 часов назад)</span></p>
-                      <p class="card__text">Самая кубанская в мире!</p>
-                    </div>
-                    <div class="card__activ">
-                      <button class="card__button" type="button">
-                        <span class="visually-hidden">Нравится эта фотография</span>
-                      </button>
-                      <span class="card__like">Нравится: 4</span>
-                    </div>
-                  </div>
-                </li>
-                <li class="catalog__item card">
-                  <picture>
-                    <source media="(min-width: 1200px)" srcset="./img/cards/photo-5-desktop.jpg 1x, ./img/cards/photo-5-desktop@2x.jpg 2x">
-                    <source media="(min-width: 660px)" srcset="./img/cards/photo-5-tablet.jpg 1x, ./img/cards/photo-5-tablet@2x.jpg 2x">
-                    <img class="card__photo" src="./img/cards/photo-5-mobile.jpg" srcset="./img/cards/photo-5-mobile@2x.jpg 2x" alt="Автор сидит на уступе скалы">
-                  </picture>
-                  <div class="card__info">
-                    <div class="card__container">
-                      <p class="card__user-name">Максим <span class="card__period">(40 часов назад)</span></p>
-                      <p class="card__text">Где снег-то?</p>
-                    </div>
-                    <div class="card__activ">
-                      <button class="card__button" type="button">
-                        <span class="visually-hidden">Нравится эта фотография</span>
-                      </button>
-                      <span class="card__like">Нравится: 150</span>
-                    </div>
-                  </div>
-                </li>
-                <li class="catalog__item card">
-                  <picture>
-                    <source media="(min-width: 1200px)" srcset="./img/cards/photo-6-desktop.jpg 1x, ./img/cards/photo-6-desktop@2x.jpg 2x">
-                    <source media="(min-width: 660px)" srcset="./img/cards/photo-6-tablet.jpg 1x, ./img/cards/photo-6-tablet@2x.jpg 2x">
-                    <img class="card__photo" src="./img/cards/photo-6-mobile.jpg" srcset="./img/cards/photo-6-mobile@2x.jpg 2x" alt="Крыло самолета с лучами солнца">
-                  </picture>
-                  <div class="card__info">
-                    <div class="card__container">
-                      <p class="card__user-name">Надежда <span class="card__period">(45 часов назад)</span></p>
-                      <p class="card__text">Всем GM и взаимные лайки!</p>
-                    </div>
-                    <div class="card__activ">
-                      <button class="card__button" type="button">
-                        <span class="visually-hidden">Нравится эта фотография</span>
-                      </button>
-                      <span class="card__like">Нравится: 2560</span>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+            <li class="catalog__item card">
+              <figure>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/cards/photo-1-desktop.jpg 1x, ./img/cards/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/cards/photo-1-tablet.jpg 1x, ./img/cards/photo-1-tablet@2x.jpg 2x">
+                  <img class="card__photo" src="./img/cards/photo-1-mobile.jpg" srcset="./img/cards/photo-1-mobile@2x.jpg 2x" alt="Белый автомобиль">
+                </picture>
+              </figure>
+              <div class="card__info">
+                <p class="card__user-name">Левон <span class="card__period">(5 часов назад)</span></p>
+                <p class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <button class="card__button" type="button">
+                  <span class="visually-hidden">Нравится эта фотография</span>
+                </button>
+                <span class="card__like">Нравится: 356</span>
+              </div>
+            </li>
+            <li class="catalog__item card">
+              <figure>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/cards/photo-2-desktop.jpg 1x, ./img/cards/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/cards/photo-2-tablet.jpg 1x, ./img/cards/photo-2-tablet@2x.jpg 2x">
+                  <img class="card__photo" src="./img/cards/photo-2-mobile.jpg" srcset="./img/cards/photo-2-mobile@2x.jpg 2x" alt="Барабанная установка">
+                </picture>
+              </figure>
+              <div class="card__info">
+                <p class="card__user-name">Антон <span class="card__period">(12 часов назад)</span></p>
+                <p class="card__text">Соседи будут рады!</p>
+                <button class="card__button" type="button">
+                  <span class="visually-hidden">Нравится эта фотография</span>
+                </button>
+                <span class="card__like">Нравится: 666</span>
+              </div>
+            </li>
+            <li class="catalog__item card">
+              <figure>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/cards/photo-3-desktop.jpg 1x, ./img/cards/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/cards/photo-3-tablet.jpg 1x, ./img/cards/photo-3-tablet@2x.jpg 2x">
+                  <img class="card__photo" src="./img/cards/photo-3-mobile.jpg" srcset="./img/cards/photo-3-mobile@2x.jpg 2x" alt="Небо и небоскреб сквозь атриум">
+                </picture>
+              </figure>
+              <div class="card__info">
+                <p class="card__user-name">Борис <span class="card__period">(20 часов назад)</span></p>
+                <p class="card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <button class="card__button" type="button">
+                  <span class="visually-hidden">Нравится эта фотография</span>
+                </button>
+                <span class="card__like">Нравится: 215</span>
+              </div>
+            </li>
+            <li class="catalog__item card">
+              <figure>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/cards/photo-4-desktop.jpg 1x, ./img/cards/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/cards/photo-4-tablet.jpg 1x, ./img/cards/photo-4-tablet@2x.jpg 2x">
+                  <img class="card__photo" src="./img/cards/photo-4-mobile.jpg" srcset="./img/cards/photo-4-mobile@2x.jpg 2x" alt="Сельхоз ярмарка">
+                </picture>
+              </figure>
+              <div class="card__info">
+                <p class="card__user-name">Сергей <span class="card__period">(25 часов назад)</span></p>
+                <p class="card__text">Самая кубанская в мире!</p>
+                <button class="card__button" type="button">
+                  <span class="visually-hidden">Нравится эта фотография</span>
+                </button>
+                <span class="card__like">Нравится: 4</span>
+              </div>
+            </li>
+            <li class="catalog__item card">
+              <figure>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/cards/photo-5-desktop.jpg 1x, ./img/cards/photo-5-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/cards/photo-5-tablet.jpg 1x, ./img/cards/photo-5-tablet@2x.jpg 2x">
+                  <img class="card__photo" src="./img/cards/photo-5-mobile.jpg" srcset="./img/cards/photo-5-mobile@2x.jpg 2x" alt="Автор сидит на уступе скалы">
+                </picture>
+              </figure>
+              <div class="card__info">
+                <p class="card__user-name">Максим <span class="card__period">(40 часов назад)</span></p>
+                <p class="card__text">Где снег-то?</p>
+                <button class="card__button" type="button">
+                  <span class="visually-hidden">Нравится эта фотография</span>
+                </button>
+                <span class="card__like">Нравится: 150</span>
+              </div>
+            </li>
+            <li class="catalog__item card">
+              <figure>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/cards/photo-6-desktop.jpg 1x, ./img/cards/photo-6-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/cards/photo-6-tablet.jpg 1x, ./img/cards/photo-6-tablet@2x.jpg 2x">
+                  <img class="card__photo" src="./img/cards/photo-6-mobile.jpg" srcset="./img/cards/photo-6-mobile@2x.jpg 2x" alt="Крыло самолета с лучами солнца">
+                </picture>
+              </figure>
+              <div class="card__info">
+                <p class="card__user-name">Надежда <span class="card__period">(45 часов назад)</span></p>
+                <p class="card__text">Всем GM и взаимные лайки!</p>
+                <button class="card__button" type="button">
+                  <span class="visually-hidden">Нравится эта фотография</span>
+                </button>
+                <span class="card__like">Нравится: 2560</span>
+              </div>
             </li>
           </ul>
         </div>
@@ -321,19 +311,19 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__logo logo-pink">
-          <a class="logo-pink__link logo-pink__link--icon" href="index.html">
-            <svg width="59" height="40" role="img" aria-label="Логотип приложения Пинк." xmlns="http://www.w3.org/2000/svg">
+          <a class="logo-pink__link logo-pink__link--icon" href="index.html" aria-label="Логотип приложения Пинк.">
+            <svg width="59" height="40" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="#logo-pink-icon"></use>
             </svg>
           </a>
-          <a class="logo-pink__link logo-pink__link--word" href="index.html">
-            <svg width="74" height="23" role="img" aria-label="Логотип приложения Пинк." xmlns="http://www.w3.org/2000/svg">
+          <a class="logo-pink__link logo-pink__link--word" href="index.html" aria-label="Логотип приложения Пинк.">
+            <svg width="74" height="23" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="#logo-pink-word"></use>
             </svg>
             <span class="visually-hidden">Приложение "Пинк"</span>
           </a>
-          <a class="logo-pink__link logo-pink__link--desktop" href="index.html">
-            <svg width="147" height="40" role="img" aria-label="Логотип приложения Пинк." xmlns="http://www.w3.org/2000/svg">
+          <a class="logo-pink__link logo-pink__link--desktop" href="index.html" aria-label="Логотип приложения Пинк.">
+            <svg width="147" height="40" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="#logo-pink-desktop"></use>
             </svg>
             <span class="visually-hidden">Приложение "Пинк"</span>
@@ -344,7 +334,7 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" aria-label="Twitter.">
-                <svg width="18" height="14" role="img" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="18" height="14" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="#icon-twitter"></use>
                 </svg>
                 <span class="visually-hidden">Twitter</span>
@@ -352,7 +342,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://Facebook.com/htmlacademy" aria-label="Facebook.">
-                <svg width="9" height="18" role="img" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="9" height="18" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="#icon-facebook"></use>
                 </svg>
                 <span class="visually-hidden">Facebook</span>
@@ -360,7 +350,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS" aria-label="Youtube.">
-                <svg width="15" height="13" role="img" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="15" height="13" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="#icon-youtube"></use>
                 </svg>
                 <span class="visually-hidden">Youtube</span>
@@ -371,7 +361,7 @@
         <div class="footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Академия.">
-            <svg width="27" height="34" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <svg width="27" height="34" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="#icon-htmlacademy"></use>
             </svg>
           </a>
