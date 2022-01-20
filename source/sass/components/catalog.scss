@@ -4,9 +4,9 @@
 }
 
 .catalog__wrapper {
-  min-width: 280px;
+  // @include mobile-max-width;
+  // min-width: 280px;
   padding-top: 54px;
-  // padding: 54px 20px;
   margin: 0 auto;
   position: relative;
 
@@ -17,7 +17,6 @@
 
 .catalog__subtitle {
   @include mobile-max-width;
-
   font-weight: $weight-normal;
   font-size: 14px;
   line-height: 30px;
@@ -27,7 +26,6 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-max-width;
-
     font-size: 18px;
     line-height: 167%;
     margin-bottom: 85px;
@@ -37,52 +35,6 @@
     @include desktop-max-width;
     margin-bottom: 97px;
   }
-}
-
-.catalog__panorama {
-  display: block;
-  max-width: 320px;
-  margin: 0 auto;
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    max-width: 660px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1200px;
-  }
-
-  &::before {
-    content: "Панорама дня";
-    width: 140px;
-    height: 36px;
-    background-color: $pink;
-    font-family: $base-font;
-    font-weight: $weight-bold;
-    font-size: 12px;
-    line-height: 200%;
-    color: $white;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 5px;
-    position: absolute;
-    top: 0;
-    right: 20px;
-
-    @media (min-width: $tablet-width) {
-      top: 57px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 54px;
-      right: 130px;
-    }
-  }
-}
-
-.catalog__photo-panorama {
-  display: block;
 }
 
 .catalog__list {
@@ -97,6 +49,7 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-max-width;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 300px 300px;
     gap: 20px;

@@ -23,7 +23,7 @@
       width: 195px;
       height: 346px;
       position: absolute;
-      top: 150px;
+      top: 166px;
       right: 75px;
 
       @media (min-resolution: 2dppx) {
@@ -84,8 +84,8 @@
   @include mobile-max-width;
   font-weight: $weight-light;
   font-size: 24px;
-  line-height: 29px;
-  height: 396px;
+  line-height: 120%;
+  min-height: 396px;
   background-image: $bg-hand-mobile;
   background-repeat: no-repeat;
   background-size: 320px 286px;
@@ -100,9 +100,14 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
-    height: 127px;
+    min-height: 127px;
+    font-size: 40px;
     align-items: start;
     background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
   }
 
   &::after {
@@ -122,6 +127,7 @@
 
     @media (min-width: $tablet-width) {
       background-image: none;
+      min-height: 174px;
     }
   }
 }
@@ -169,6 +175,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .intro__item:not(:last-child) {
@@ -207,5 +214,10 @@
   margin-top: 28px;
   font-weight: $weight-light;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 171%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 133%;
+  }
 }
