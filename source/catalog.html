@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon-32x32.png" type="image/png+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
@@ -56,22 +56,7 @@
           </div>
         </nav>
 
-        <script>
-          var nav = document.querySelector('.nav');
-          var navToggle = document.querySelector('.nav__toggle');
-
-          nav.classList.remove('nav--nojs');
-
-          navToggle.addEventListener('click', function() {
-            if (nav.classList.contains('nav--closed')) {
-              nav.classList.remove('nav--closed');
-              nav.classList.add('nav--opened');
-            } else {
-              nav.classList.add('nav--closed');
-              nav.classList.remove('nav--opened');
-            }
-          });
-        </script>
+        <script src="./js/script.js"></script>
 
         <h1 class="header__title header__title--inner">Фотографии пользователей</h1>
       </div>
@@ -223,8 +208,9 @@
             <div class="upload__edition edition">
               <div class="edition__item">
                 <button class="edition__button edition__button--crop edition__button--current" type="button" aria-label="Обрезка.">
-                  <svg class="edition__icon" width="44" height="44" xmlns="http://www.w3.org/2000/svg" aria-label="Обрезка.">
-                    <use href="img/sprite.svg#edition-crop"></use>
+                  <svg class="edition__icon" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" aria-label="Обрезка.">
+                    <!-- <use href="img/sprite.svg#edition-crop"></use> -->
+                    <path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z" fill="#D22856"/>
                   </svg>
                 </button>
                 <div class="edition__change edition__change--crop">
@@ -235,8 +221,9 @@
               </div>
               <div class="edition__item">
                 <button class="edition__button edition__button--fill" type="button" aria-label="Заливка.">
-                  <svg class="edition__icon" width="48" height="43" xmlns="http://www.w3.org/2000/svg" aria-label="Заливка.">
-                    <use href="img/sprite.svg#edition-fill"></use>
+                  <svg class="edition__icon" width="48" height="43" viewBox="0 0 48 43" xmlns="http://www.w3.org/2000/svg" aria-label="Заливка.">
+                    <path d="M33.12 17.88 15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24ZM10.41 20 20 10.42 29.59 20H10.41ZM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7ZM48 40H0v3h48v-3Z"/>
+                    <!-- <use href="img/sprite.svg#edition-fill"></use> -->
                   </svg>
                 </button>
                 <div class="edition__change edition__change--fill">
@@ -247,8 +234,10 @@
               </div>
               <div class="edition__item">
                 <button class="edition__button edition__button--contrast" type="button" aria-label="Контраст.">
-                  <svg class="edition__icon" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-label="Контраст.">
-                    <use href="img/sprite.svg#edition-contrast"></use>
+                  <svg class="edition__icon" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-label="Контраст.">
+                    <path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24Zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32Z"/>
+                    <path d="M16 24.29a8.52 8.52 0 0 0 0-17"/>
+                    <!-- <use href="img/sprite.svg#edition-contrast"></use> -->
                   </svg>
                 </button>
                 <div class="edition__change edition__change--contrast">

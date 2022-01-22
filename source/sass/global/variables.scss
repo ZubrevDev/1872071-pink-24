@@ -6,6 +6,7 @@ $blue-dark: #1d2631;
 $light: #f2f2f2;
 $pink: #d22856;
 $green: #2aab6d;
+$green-dark: #1c9b5e;
 $grey: #e5e5e5;
 
 //фоновый цвет
@@ -46,7 +47,7 @@ $control-tick: url("../img/tick.png");
 $diagram: url("../img/diagram.png");
 
 //шрифты
-$base-font: "Open Sans","Arial", sans-serif;
+$base-font: "Open Sans", sans-serif;
 $weight-light: 300;
 $weight-normal: 400;
 $weight-bold: 700;
@@ -110,9 +111,4 @@ $mobile-width-only: 659px;
 
 @mixin desktop-max-width {
   width: 960px;
-}
-//ul-decoration-in-global
-@mixin ul-decoration {
-  list-style: none;
-  padding-inline-start: 0;
 }

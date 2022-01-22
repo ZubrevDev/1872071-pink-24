@@ -63,4 +63,13 @@
 .modal__button {
   @include btn-form;
   margin: 0 auto;
+
+  &:hover {
+    background: $green-dark;
+    border: 2px solid $green-dark;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

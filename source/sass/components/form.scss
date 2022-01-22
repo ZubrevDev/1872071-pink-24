@@ -168,10 +168,23 @@
 }
 
 .form__button {
+  @include btn-form;
   margin: 0 auto;
   margin-bottom: 46px;
 
-  @include btn-form;
+  &:hover {
+    background: $green-dark;
+    border: 2px solid $green-dark;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background: $grey;
+    border: 2px solid $grey;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;

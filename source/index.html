@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon-32x32.png" type="image/png+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
@@ -55,22 +55,7 @@
           </div>
         </nav>
 
-        <script>
-          var nav = document.querySelector('.nav');
-          var navToggle = document.querySelector('.nav__toggle');
-
-          nav.classList.remove('nav--nojs');
-
-          navToggle.addEventListener('click', function() {
-            if (nav.classList.contains('nav--closed')) {
-              nav.classList.remove('nav--closed');
-              nav.classList.add('nav--opened');
-            } else {
-              nav.classList.add('nav--closed');
-              nav.classList.remove('nav--opened');
-            }
-          });
-        </script>
+        <script src="./js/script.js"></script>
 
         <section class="intro">
           <h2 class="visually-hidden">Скачать приложение Пинк</h2>
