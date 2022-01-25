@@ -62,18 +62,19 @@
 
   @media (min-width: $tablet-width) {
     width: 241px;
-order: 3;
+    order: 3;
+
     &--adress {
       width: auto;
       order: 4;
       margin-top: 55px;
-
     }
   }
 
   @media (min-width: $desktop-width) {
     min-width: 241px;
     order: 1;
+
     &--adress {
       min-width: auto;
       order: 1;
@@ -101,7 +102,6 @@ order: 3;
   display: block;
 
   @media (min-width: $tablet-width) {
-
     height: 374px;
     text-align: center;
   }
