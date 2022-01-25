@@ -46,7 +46,7 @@
 .contacts__list {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -62,18 +62,22 @@
 
   @media (min-width: $tablet-width) {
     width: 241px;
-
+order: 3;
     &--adress {
       width: auto;
+      order: 4;
+      margin-top: 55px;
+
     }
   }
 
   @media (min-width: $desktop-width) {
     min-width: 241px;
-
+    order: 1;
     &--adress {
       min-width: auto;
-      order: 2;
+      order: 1;
+      margin-top: 0px;
     }
   }
 }
@@ -93,11 +97,10 @@
 }
 
 .contacts iframe {
-  @include mobile-max-width;
+  width: 100%;
   display: block;
 
   @media (min-width: $tablet-width) {
-    @include tablet-max-width;
 
     height: 374px;
     text-align: center;
